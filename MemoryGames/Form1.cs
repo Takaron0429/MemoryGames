@@ -1,5 +1,9 @@
 ﻿using System;
+using System.Drawing;
+using System.Media;
+using System.Reflection.Emit;
 using System.Windows.Forms;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace MemoryGames
 {
@@ -22,7 +26,10 @@ namespace MemoryGames
 
         private void startButton_Click(object sender, EventArgs e)
         {
-
+            Form2 f2 = new Form2();
+            this.Hide();
+            f2.ShowDialog();
+            this.Close();
         }
     }
 }

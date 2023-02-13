@@ -43,7 +43,7 @@
             this.titleLabel.Font = new System.Drawing.Font("Showcard Gothic", 35.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.titleLabel.ForeColor = System.Drawing.SystemColors.Control;
             this.titleLabel.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.titleLabel.Location = new System.Drawing.Point(209, 9);
+            this.titleLabel.Location = new System.Drawing.Point(205, 42);
             this.titleLabel.Name = "titleLabel";
             this.titleLabel.Size = new System.Drawing.Size(387, 59);
             this.titleLabel.TabIndex = 0;
@@ -107,11 +107,10 @@
             this.Controls.Add(this.titleLabel);
             this.DoubleBuffered = true;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
-            this.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "Form1";
-            this.Text = "Form1";
+            this.Text = "Memória Játék (Fejlesztés alatt)";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -119,12 +118,11 @@
         }
 
         #endregion
-
-        private System.Windows.Forms.Label titleLabel;
         private System.Windows.Forms.Button startButton;
         private System.Windows.Forms.Button exitButton;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label titleLabel;
     }
 }
 
