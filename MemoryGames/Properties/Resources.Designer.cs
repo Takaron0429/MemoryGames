@@ -59,5 +59,15 @@ namespace MemoryGames.Properties {
                 resourceCulture = value;
             }
         }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap legyen_on_is_milliomos {
+            get {
+                object obj = ResourceManager.GetObject("legyen-on-is-milliomos", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
     }
 }
