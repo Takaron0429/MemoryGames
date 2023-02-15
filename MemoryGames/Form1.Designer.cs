@@ -99,11 +99,11 @@ namespace MemoryGames
             this.scoreboardLabel.AutoSize = true;
             this.scoreboardLabel.Font = new System.Drawing.Font("Showcard Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.scoreboardLabel.ForeColor = System.Drawing.SystemColors.Control;
-            this.scoreboardLabel.Location = new System.Drawing.Point(43, 100);
+            this.scoreboardLabel.Location = new System.Drawing.Point(55, 101);
             this.scoreboardLabel.Name = "scoreboardLabel";
-            this.scoreboardLabel.Size = new System.Drawing.Size(147, 27);
+            this.scoreboardLabel.Size = new System.Drawing.Size(121, 27);
             this.scoreboardLabel.TabIndex = 6;
-            this.scoreboardLabel.Text = "Scoreboard";
+            this.scoreboardLabel.Text = "RANGLISTA";
             // 
             // impressumLabel
             // 

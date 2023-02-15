@@ -32,12 +32,14 @@
             this.tkLabel = new System.Windows.Forms.Label();
             this.vrLabel = new System.Windows.Forms.Label();
             this.madebyLabel = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // closeButton
             // 
             this.closeButton.Font = new System.Drawing.Font("Showcard Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.closeButton.Location = new System.Drawing.Point(149, 376);
+            this.closeButton.Location = new System.Drawing.Point(143, 377);
             this.closeButton.Name = "closeButton";
             this.closeButton.Size = new System.Drawing.Size(97, 38);
             this.closeButton.TabIndex = 16;
@@ -51,7 +53,7 @@
             this.tkLabel.BackColor = System.Drawing.Color.Transparent;
             this.tkLabel.Font = new System.Drawing.Font("Showcard Gothic", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tkLabel.ForeColor = System.Drawing.SystemColors.Control;
-            this.tkLabel.Location = new System.Drawing.Point(115, 212);
+            this.tkLabel.Location = new System.Drawing.Point(107, 134);
             this.tkLabel.Name = "tkLabel";
             this.tkLabel.Size = new System.Drawing.Size(171, 30);
             this.tkLabel.TabIndex = 15;
@@ -63,7 +65,7 @@
             this.vrLabel.BackColor = System.Drawing.Color.Transparent;
             this.vrLabel.Font = new System.Drawing.Font("Showcard Gothic", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.vrLabel.ForeColor = System.Drawing.SystemColors.Control;
-            this.vrLabel.Location = new System.Drawing.Point(64, 137);
+            this.vrLabel.Location = new System.Drawing.Point(59, 81);
             this.vrLabel.Name = "vrLabel";
             this.vrLabel.Size = new System.Drawing.Size(273, 30);
             this.vrLabel.TabIndex = 14;
@@ -75,11 +77,22 @@
             this.madebyLabel.BackColor = System.Drawing.Color.Transparent;
             this.madebyLabel.Font = new System.Drawing.Font("Showcard Gothic", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.madebyLabel.ForeColor = System.Drawing.SystemColors.Control;
-            this.madebyLabel.Location = new System.Drawing.Point(84, 9);
+            this.madebyLabel.Location = new System.Drawing.Point(77, 9);
             this.madebyLabel.Name = "madebyLabel";
             this.madebyLabel.Size = new System.Drawing.Size(233, 44);
             this.madebyLabel.TabIndex = 13;
             this.madebyLabel.Text = "Készítette:";
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureBox1.Image = global::MemoryGames.Properties.Resources.legyen_on_is_milliomos_logo;
+            this.pictureBox1.Location = new System.Drawing.Point(12, 114);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(364, 311);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 17;
+            this.pictureBox1.TabStop = false;
             // 
             // Form3
             // 
@@ -91,10 +104,12 @@
             this.Controls.Add(this.tkLabel);
             this.Controls.Add(this.vrLabel);
             this.Controls.Add(this.madebyLabel);
+            this.Controls.Add(this.pictureBox1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.MaximizeBox = false;
             this.Name = "Form3";
             this.Text = "Legyen Ön is milliomos! (Fejlesztés alatt)";
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -106,5 +121,6 @@
         private System.Windows.Forms.Label tkLabel;
         private System.Windows.Forms.Label vrLabel;
         private System.Windows.Forms.Label madebyLabel;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }

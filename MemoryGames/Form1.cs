@@ -1,9 +1,6 @@
 ﻿using System;
-using System.Drawing;
 using System.Media;
-using System.Reflection.Emit;
 using System.Windows.Forms;
-using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace MemoryGames
 {
@@ -16,7 +13,6 @@ namespace MemoryGames
             InitializeComponent();
         }
 
-      
         private void Form1_Load(object sender, EventArgs e)
         {
             soundplayer.PlayLooping();

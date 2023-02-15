@@ -101,20 +101,11 @@
     <None Include="Resources\legyen-on-is-milliomos.jpg" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\Question33.jpg" />
-    <None Include="Resources\Questions2.png" />
+    <None Include="Resources\tel.png" />
     <None Include="Resources\tag2.PNG" />
-    <None Include="Resources\Tag.PNG" />
-    <None Include="Resources\Questions1.png" />
-    <None Include="Resources\Question32.jpg" />
-    <None Include="Resources\Question31.jpg" />
-    <None Include="Resources\Question21.png" />
-    <None Include="Resources\Question3.jpg" />
-    <None Include="Resources\Questions.png" />
-    <None Include="Resources\Question2.png" />
-    <None Include="Resources\tel.PNG" />
+    <None Include="Resources\legyen-on-is-milliomos-logo.png" />
     <None Include="Resources\felezo.png" />
-    <None Include="Resources\kozonseg.PNG" />
+    <None Include="Resources\kozonseg.png" />
     <Content Include="Resources\Main-Theme.wav" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
