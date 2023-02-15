@@ -82,12 +82,12 @@ namespace MemoryGames
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(60, 13);
             this.label3.TabIndex = 4;
-            this.label3.Text = "Version 0.2";
+            this.label3.Text = "Version 0.3";
             // 
             // scoreboardListBox
             // 
             this.scoreboardListBox.BackColor = System.Drawing.Color.Black;
-            this.scoreboardListBox.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.scoreboardListBox.ForeColor = System.Drawing.SystemColors.Control;
             this.scoreboardListBox.FormattingEnabled = true;
             this.scoreboardListBox.Location = new System.Drawing.Point(27, 140);
             this.scoreboardListBox.Name = "scoreboardListBox";

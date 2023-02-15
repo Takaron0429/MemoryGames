@@ -30,7 +30,7 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form2));
-            this.QusetionBox = new System.Windows.Forms.RichTextBox();
+            this.QuestionBox = new System.Windows.Forms.RichTextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -84,6 +84,7 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.pictureBox6 = new System.Windows.Forms.PictureBox();
+            this.developerLabel = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -92,16 +93,16 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
             this.SuspendLayout();
             // 
-            // QusetionBox
+            // QuestionBox
             // 
-            this.QusetionBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(3)))), ((int)(((byte)(117)))));
-            this.QusetionBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.QusetionBox.ForeColor = System.Drawing.SystemColors.Info;
-            this.QusetionBox.Location = new System.Drawing.Point(298, 355);
-            this.QusetionBox.Name = "QusetionBox";
-            this.QusetionBox.Size = new System.Drawing.Size(393, 65);
-            this.QusetionBox.TabIndex = 2;
-            this.QusetionBox.Text = "";
+            this.QuestionBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(3)))), ((int)(((byte)(117)))));
+            this.QuestionBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.QuestionBox.ForeColor = System.Drawing.SystemColors.Info;
+            this.QuestionBox.Location = new System.Drawing.Point(298, 355);
+            this.QuestionBox.Name = "QuestionBox";
+            this.QuestionBox.Size = new System.Drawing.Size(393, 65);
+            this.QuestionBox.TabIndex = 2;
+            this.QuestionBox.Text = "";
             // 
             // label1
             // 
@@ -677,6 +678,17 @@
             this.pictureBox6.TabIndex = 61;
             this.pictureBox6.TabStop = false;
             // 
+            // developerLabel
+            // 
+            this.developerLabel.AutoSize = true;
+            this.developerLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.developerLabel.ForeColor = System.Drawing.SystemColors.Control;
+            this.developerLabel.Location = new System.Drawing.Point(564, 577);
+            this.developerLabel.Name = "developerLabel";
+            this.developerLabel.Size = new System.Drawing.Size(271, 31);
+            this.developerLabel.TabIndex = 62;
+            this.developerLabel.Text = "DEVELOPER LABEL";
+            // 
             // Form2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -684,6 +696,7 @@
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(43)))), ((int)(((byte)(83)))));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1125, 634);
+            this.Controls.Add(this.developerLabel);
             this.Controls.Add(this.button4);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);
@@ -732,7 +745,7 @@
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.button5);
             this.Controls.Add(this.button1);
-            this.Controls.Add(this.QusetionBox);
+            this.Controls.Add(this.QuestionBox);
             this.Controls.Add(this.listBox1);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.pictureBox5);
@@ -753,7 +766,7 @@
         }
 
         #endregion
-        private System.Windows.Forms.RichTextBox QusetionBox;
+        private System.Windows.Forms.RichTextBox QuestionBox;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
@@ -807,5 +820,6 @@
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.PictureBox pictureBox6;
+        private System.Windows.Forms.Label developerLabel;
     }
 }
