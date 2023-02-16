@@ -9,6 +9,10 @@ namespace MemoryGames
     {
         static List<Class1> list = new List<Class1>();
 
+        Random rnd = new Random();
+
+        int Round = 0;
+
         static void Read()
         {
             StreamReader sr = new StreamReader("../../Resources/loim.txt");
@@ -47,6 +51,19 @@ namespace MemoryGames
             if (mp == 0)
             {
                 timer1.Stop();
+            }
+        }
+
+        private void tibi_Click(object sender, EventArgs e)
+        {
+            for (int i = 0; i < 12; i++)
+            {
+                QuestionBox.Text = list[i].Question;
+                Acaption.Text = list[i].A;
+                Bcaption.Text = list[i].B;
+                Ccaption.Text = list[i].C;
+                Dcaption.Text = list[i].D;
+                developerLabel.Text = list[i].Answer.ToString(); //for testing
             }
         }
     }

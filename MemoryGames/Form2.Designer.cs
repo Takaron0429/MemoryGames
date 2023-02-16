@@ -37,7 +37,7 @@
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
-            this.button5 = new System.Windows.Forms.Button();
+            this.tibi = new System.Windows.Forms.Button();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.Time = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
@@ -177,17 +177,18 @@
             this.label6.TabIndex = 12;
             this.label6.Text = "6";
             // 
-            // button5
+            // tibi
             // 
-            this.button5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
-            this.button5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.button5.ForeColor = System.Drawing.Color.White;
-            this.button5.Location = new System.Drawing.Point(21, 149);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(100, 42);
-            this.button5.TabIndex = 19;
-            this.button5.Text = "Kocsis Tibor";
-            this.button5.UseVisualStyleBackColor = false;
+            this.tibi.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.tibi.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.tibi.ForeColor = System.Drawing.Color.White;
+            this.tibi.Location = new System.Drawing.Point(21, 149);
+            this.tibi.Name = "tibi";
+            this.tibi.Size = new System.Drawing.Size(100, 42);
+            this.tibi.TabIndex = 19;
+            this.tibi.Text = "Kocsis Tibor";
+            this.tibi.UseVisualStyleBackColor = false;
+            this.tibi.Click += new System.EventHandler(this.tibi_Click);
             // 
             // timer1
             // 
@@ -754,7 +755,7 @@
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.Time);
             this.Controls.Add(this.pictureBox1);
-            this.Controls.Add(this.button5);
+            this.Controls.Add(this.tibi);
             this.Controls.Add(this.Acaption);
             this.Controls.Add(this.QuestionBox);
             this.Controls.Add(this.listBox1);
@@ -786,7 +787,7 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Button button5;
+        private System.Windows.Forms.Button tibi;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Timer timer1;
         private System.Windows.Forms.Label Time;
