@@ -86,6 +86,12 @@
             this.pictureBox6 = new System.Windows.Forms.PictureBox();
             this.developerLabel = new System.Windows.Forms.Label();
             this.panel14 = new System.Windows.Forms.Panel();
+            this.Cont = new System.Windows.Forms.Button();
+            this.richTextBox1 = new System.Windows.Forms.RichTextBox();
+            this.panel3.SuspendLayout();
+            this.panel4.SuspendLayout();
+            this.panel5.SuspendLayout();
+            this.panel6.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -98,10 +104,11 @@
             // 
             this.QuestionBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(3)))), ((int)(((byte)(117)))));
             this.QuestionBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.QuestionBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.QuestionBox.ForeColor = System.Drawing.SystemColors.Info;
-            this.QuestionBox.Location = new System.Drawing.Point(298, 355);
+            this.QuestionBox.Location = new System.Drawing.Point(298, 369);
             this.QuestionBox.Name = "QuestionBox";
-            this.QuestionBox.Size = new System.Drawing.Size(393, 65);
+            this.QuestionBox.Size = new System.Drawing.Size(424, 51);
             this.QuestionBox.TabIndex = 2;
             this.QuestionBox.Text = "";
             // 
@@ -406,26 +413,27 @@
             // label22
             // 
             this.label22.AutoSize = true;
-            this.label22.BackColor = System.Drawing.SystemColors.ActiveBorder;
+            this.label22.BackColor = System.Drawing.Color.MediumBlue;
             this.label22.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.label22.ForeColor = System.Drawing.Color.White;
-            this.label22.Location = new System.Drawing.Point(1008, 251);
+            this.label22.Location = new System.Drawing.Point(130, 0);
             this.label22.Name = "label22";
             this.label22.Size = new System.Drawing.Size(76, 16);
             this.label22.TabIndex = 38;
-            this.label22.Text = "400.000 Ft";
+            this.label22.Text = "300.000 Ft";
             // 
             // label23
             // 
             this.label23.AutoSize = true;
-            this.label23.BackColor = System.Drawing.Color.MediumBlue;
+            this.label23.BackColor = System.Drawing.SystemColors.ActiveBorder;
             this.label23.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.label23.ForeColor = System.Drawing.Color.White;
-            this.label23.Location = new System.Drawing.Point(1008, 287);
+            this.label23.Location = new System.Drawing.Point(134, 0);
             this.label23.Name = "label23";
             this.label23.Size = new System.Drawing.Size(76, 16);
             this.label23.TabIndex = 39;
-            this.label23.Text = "300.000 Ft";
+            this.label23.Text = "400.000 Ft";
+            this.label23.Click += new System.EventHandler(this.label23_Click);
             // 
             // label24
             // 
@@ -433,11 +441,11 @@
             this.label24.BackColor = System.Drawing.Color.MediumBlue;
             this.label24.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.label24.ForeColor = System.Drawing.Color.White;
-            this.label24.Location = new System.Drawing.Point(1008, 193);
+            this.label24.Location = new System.Drawing.Point(130, 0);
             this.label24.Name = "label24";
-            this.label24.Size = new System.Drawing.Size(88, 16);
+            this.label24.Size = new System.Drawing.Size(76, 16);
             this.label24.TabIndex = 40;
-            this.label24.Text = "1.000.000 Ft";
+            this.label24.Text = "500.000 Ft";
             // 
             // label25
             // 
@@ -445,15 +453,16 @@
             this.label25.BackColor = System.Drawing.Color.MediumBlue;
             this.label25.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.label25.ForeColor = System.Drawing.Color.White;
-            this.label25.Location = new System.Drawing.Point(1008, 223);
+            this.label25.Location = new System.Drawing.Point(125, 0);
             this.label25.Name = "label25";
-            this.label25.Size = new System.Drawing.Size(76, 16);
+            this.label25.Size = new System.Drawing.Size(88, 16);
             this.label25.TabIndex = 41;
-            this.label25.Text = "500.000 Ft";
+            this.label25.Text = "1.000.000 Ft";
             // 
             // panel3
             // 
             this.panel3.BackColor = System.Drawing.Color.MediumBlue;
+            this.panel3.Controls.Add(this.label25);
             this.panel3.ForeColor = System.Drawing.Color.White;
             this.panel3.Location = new System.Drawing.Point(886, 193);
             this.panel3.Name = "panel3";
@@ -463,6 +472,7 @@
             // panel4
             // 
             this.panel4.BackColor = System.Drawing.Color.MediumBlue;
+            this.panel4.Controls.Add(this.label24);
             this.panel4.ForeColor = System.Drawing.Color.White;
             this.panel4.Location = new System.Drawing.Point(886, 223);
             this.panel4.Name = "panel4";
@@ -472,6 +482,7 @@
             // panel5
             // 
             this.panel5.BackColor = System.Drawing.SystemColors.ActiveBorder;
+            this.panel5.Controls.Add(this.label23);
             this.panel5.ForeColor = System.Drawing.Color.White;
             this.panel5.Location = new System.Drawing.Point(886, 251);
             this.panel5.Name = "panel5";
@@ -481,6 +492,7 @@
             // panel6
             // 
             this.panel6.BackColor = System.Drawing.Color.MediumBlue;
+            this.panel6.Controls.Add(this.label22);
             this.panel6.ForeColor = System.Drawing.Color.White;
             this.panel6.Location = new System.Drawing.Point(886, 287);
             this.panel6.Name = "panel6";
@@ -552,18 +564,20 @@
             // 
             // ImOut
             // 
-            this.ImOut.Location = new System.Drawing.Point(32, 575);
+            this.ImOut.BackColor = System.Drawing.Color.Tomato;
+            this.ImOut.Location = new System.Drawing.Point(12, 577);
             this.ImOut.Name = "ImOut";
             this.ImOut.Size = new System.Drawing.Size(100, 47);
             this.ImOut.TabIndex = 0;
             this.ImOut.Text = "Kiszállok!";
-            this.ImOut.UseVisualStyleBackColor = true;
+            this.ImOut.UseVisualStyleBackColor = false;
             // 
             // Acaption
             // 
             this.Acaption.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(3)))), ((int)(((byte)(117)))));
             this.Acaption.FlatAppearance.BorderSize = 0;
             this.Acaption.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Acaption.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.Acaption.ForeColor = System.Drawing.SystemColors.Control;
             this.Acaption.Location = new System.Drawing.Point(265, 441);
             this.Acaption.Name = "Acaption";
@@ -571,6 +585,7 @@
             this.Acaption.TabIndex = 3;
             this.Acaption.Text = "button1";
             this.Acaption.UseVisualStyleBackColor = false;
+            this.Acaption.Click += new System.EventHandler(this.Acaption_Click);
             // 
             // Start
             // 
@@ -588,6 +603,7 @@
             this.Bcaption.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(3)))), ((int)(((byte)(117)))));
             this.Bcaption.FlatAppearance.BorderSize = 0;
             this.Bcaption.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Bcaption.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.Bcaption.ForeColor = System.Drawing.SystemColors.Control;
             this.Bcaption.Location = new System.Drawing.Point(570, 441);
             this.Bcaption.Name = "Bcaption";
@@ -601,6 +617,7 @@
             this.Dcaption.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(3)))), ((int)(((byte)(117)))));
             this.Dcaption.FlatAppearance.BorderSize = 0;
             this.Dcaption.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Dcaption.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.Dcaption.ForeColor = System.Drawing.SystemColors.Control;
             this.Dcaption.Location = new System.Drawing.Point(582, 496);
             this.Dcaption.Name = "Dcaption";
@@ -614,6 +631,7 @@
             this.Ccaption.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(3)))), ((int)(((byte)(117)))));
             this.Ccaption.FlatAppearance.BorderSize = 0;
             this.Ccaption.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Ccaption.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.Ccaption.ForeColor = System.Drawing.SystemColors.Control;
             this.Ccaption.Location = new System.Drawing.Point(265, 496);
             this.Ccaption.Name = "Ccaption";
@@ -701,6 +719,26 @@
             this.panel14.Size = new System.Drawing.Size(126, 100);
             this.panel14.TabIndex = 63;
             // 
+            // Cont
+            // 
+            this.Cont.BackColor = System.Drawing.Color.LimeGreen;
+            this.Cont.Location = new System.Drawing.Point(118, 577);
+            this.Cont.Name = "Cont";
+            this.Cont.Size = new System.Drawing.Size(104, 47);
+            this.Cont.TabIndex = 64;
+            this.Cont.Text = "Folytatom";
+            this.Cont.UseVisualStyleBackColor = false;
+            // 
+            // richTextBox1
+            // 
+            this.richTextBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.richTextBox1.Location = new System.Drawing.Point(169, 12);
+            this.richTextBox1.Name = "richTextBox1";
+            this.richTextBox1.Size = new System.Drawing.Size(188, 50);
+            this.richTextBox1.TabIndex = 65;
+            this.richTextBox1.Text = "";
+            this.richTextBox1.Visible = false;
+            // 
             // Form2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -708,6 +746,8 @@
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(43)))), ((int)(((byte)(83)))));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1125, 634);
+            this.Controls.Add(this.richTextBox1);
+            this.Controls.Add(this.Cont);
             this.Controls.Add(this.developerLabel);
             this.Controls.Add(this.Ccaption);
             this.Controls.Add(this.Dcaption);
@@ -738,16 +778,12 @@
             this.Controls.Add(this.label21);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.panel7);
-            this.Controls.Add(this.label23);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.panel6);
-            this.Controls.Add(this.label22);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.panel5);
-            this.Controls.Add(this.label25);
             this.Controls.Add(this.label10);
             this.Controls.Add(this.panel4);
-            this.Controls.Add(this.label24);
             this.Controls.Add(this.label11);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.label1);
@@ -767,6 +803,14 @@
             this.MaximizeBox = false;
             this.Name = "Form2";
             this.Text = "Legyen Ön is milliomos! (Fejlesztés alatt)";
+            this.panel3.ResumeLayout(false);
+            this.panel3.PerformLayout();
+            this.panel4.ResumeLayout(false);
+            this.panel4.PerformLayout();
+            this.panel5.ResumeLayout(false);
+            this.panel5.PerformLayout();
+            this.panel6.ResumeLayout(false);
+            this.panel6.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
@@ -835,5 +879,7 @@
         private System.Windows.Forms.PictureBox pictureBox6;
         private System.Windows.Forms.Label developerLabel;
         private System.Windows.Forms.Panel panel14;
+        private System.Windows.Forms.Button Cont;
+        private System.Windows.Forms.RichTextBox richTextBox1;
     }
 }
