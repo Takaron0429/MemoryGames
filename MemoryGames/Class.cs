@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace MemoryGames
 {
-    internal class Class1
+    internal class Class
     {
         private int difficulty;
         private string question;
@@ -121,7 +121,7 @@ namespace MemoryGames
             }
         }
 
-        public Class1(string dataline)
+        public Class(string dataline)
         {
             string[] data = dataline.Split(';');
             Difficulty = int.Parse(data[0]);

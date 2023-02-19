@@ -4,11 +4,11 @@ using System.Windows.Forms;
 
 namespace MemoryGames
 {
-    public partial class Form1 : Form
+    public partial class Menu : Form
     {
         SoundPlayer soundplayer = new SoundPlayer(@"../../Resources/Main-Theme.wav");
 
-        public Form1()
+        public Menu()
         {
             InitializeComponent();
         }
@@ -25,16 +25,16 @@ namespace MemoryGames
 
         private void startButton_Click(object sender, EventArgs e)
         {
-            Form2 f2 = new Form2();
+            User f4 = new User();
             soundplayer.Stop();
             this.Hide();
-            f2.ShowDialog();
+            f4.ShowDialog();
             this.Close();
         }
 
         private void impressumLabel_Click(object sender, EventArgs e)
         {
-            Form3 f3 = new Form3();
+            Impressum f3 = new Impressum();
             f3.ShowDialog();
         }
     }

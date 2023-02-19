@@ -1,6 +1,6 @@
 ﻿namespace MemoryGames
 {
-    partial class Form3
+    partial class Impressum
     {
         /// <summary>
         /// Required designer variable.

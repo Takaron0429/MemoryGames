@@ -63,6 +63,16 @@ namespace MemoryGames.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap digital_clock {
+            get {
+                object obj = ResourceManager.GetObject("digital-clock", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap felezo {
             get {
                 object obj = ResourceManager.GetObject("felezo", resourceCulture);
@@ -96,6 +106,16 @@ namespace MemoryGames.Properties {
         internal static System.Drawing.Bitmap legyen_on_is_milliomos_logo {
             get {
                 object obj = ResourceManager.GetObject("legyen-on-is-milliomos-logo", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap tablet_frame {
+            get {
+                object obj = ResourceManager.GetObject("tablet-frame", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

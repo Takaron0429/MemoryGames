@@ -2,14 +2,14 @@
 using System.Collections.Generic;
 using System.Drawing;
 using System.IO;
-using System.Linq;
+using System.Media;
 using System.Windows.Forms;
 
 namespace MemoryGames
 {
-    public partial class Form2 : Form
+    public partial class Game : Form
     {
-        static List<Class1> list = new List<Class1>();
+        static List<Class> list = new List<Class>();
 
         Random rnd = new Random();
 
@@ -18,6 +18,8 @@ namespace MemoryGames
         char choice;
         int select = 0;
 
+        SoundPlayer soundplayer = new SoundPlayer();
+
         static void Read()
         {
             StreamReader sr = new StreamReader("../../Resources/loim.txt");
@@ -25,7 +27,7 @@ namespace MemoryGames
             {
                 try
                 {
-                    list.Add(new Class1(sr.ReadLine()));
+                    list.Add(new Class(sr.ReadLine()));
                 }
                 catch (Exception error)
                 {
@@ -37,15 +39,22 @@ namespace MemoryGames
 
         int mp = 25;
 
-        public Form2()
+        public Game()
         {
             InitializeComponent();
             Read();
         }
 
+        private void Form2_Load(object sender, EventArgs e)
+        {
+            soundplayer = new SoundPlayer(@"../../Resources/Kvizjatek_legyen_on_is_milliomos_focimdal.wav");
+
+            soundplayer.Play();
+        }
+
         private void button6_Click(object sender, EventArgs e) //START
         {
-            
+            soundplayer.Stop();
             Start.Visible = false;
             Acaption.Enabled = true;
             Bcaption.Enabled = true;
@@ -61,17 +70,16 @@ namespace MemoryGames
             mp--;
             int perc = mp / 60;
             Time.Text = perc.ToString() + ":" + mp % 60;
-            if(mp < 11)
+            if (mp < 11)
             {
-                Time.ForeColor= Color.Red;
+                Time.ForeColor = Color.Red;
             }
             if (mp == 0)
             {
                 timer1.Stop();
             }
-            
-        }
 
+        }
 
         private void Rounds()
         {
@@ -120,12 +128,10 @@ namespace MemoryGames
                 Ccaption.Visible = false;
                 Dcaption.Visible = false;
 
-
                 timer1.Stop();
             }
             else if (Round == 6)
             {
-                richTextBox1.Visible = false;
                 ImOut.Visible = false;
                 Cont.Visible = false;
 
@@ -162,21 +168,19 @@ namespace MemoryGames
                 richTextBox1.Text = "Gratulálok! Folytatod vagy elviszed a 1.500.000 Ft?";
                 ImOut.Visible = true;
                 Cont.Visible = true;
-                tibi.Enabled= false;
+                tibi.Enabled = false;
 
                 QuestionBox.Visible = false;
 
                 Acaption.Visible = false;
                 Bcaption.Visible = false;
-                Ccaption.Visible= false;
-                Dcaption.Visible= false;
-
+                Ccaption.Visible = false;
+                Dcaption.Visible = false;
 
                 timer1.Stop();
             }
             else if (Round == 11)
             {
-                richTextBox1.Visible = false;
                 ImOut.Visible = false;
                 Cont.Visible = false;
                 panel4.BackColor = Color.Orange;
@@ -206,7 +210,7 @@ namespace MemoryGames
                 panel16.BackColor = Color.Orange;
                 label28.BackColor = Color.Orange;
                 label27.BackColor = Color.Orange;
-                Win.Visible= true;
+                Win.Visible = true;
                 Win.Text = "Szép játék volt! Most már te is Milliomos vagy!";
 
                 tibi.Enabled = false;
@@ -221,9 +225,11 @@ namespace MemoryGames
         }
 
 
-       //Essence
+        //Essence
         private void tibi_Click(object sender, EventArgs e)
         {
+            soundplayer = new SoundPlayer(@"../../Resources/Kvizjatek_lets-play.wav");
+
             QuestionBox.Visible = true;
 
             Acaption.Visible = true; Acaption.BackColor = Color.Black;
@@ -232,17 +238,22 @@ namespace MemoryGames
             Dcaption.Visible = true; Dcaption.BackColor = Color.Black;
             List<int> Numbers = new List<int>();
             mp = 25;
+
             Time.ForeColor = Color.Gold;
             timer1.Start();
-            
-            Round++; //Kör 1-12
+
+            Round++; //Kör 1-15
             Rounds();
-            for (int i = 0; i <= 15; i++)
+            for (int i = 1; i <= 15; i++)
             {
                 do
                 {
                     select = rnd.Next(0, list.Count);
                 } while (Numbers.Contains(select));
+
+                Numbers.Add(select);
+
+                soundplayer.Play();
 
                 QuestionBox.Text = list[select].Question;
                 Acaption.Text = "A   " + list[select].A;
@@ -251,7 +262,7 @@ namespace MemoryGames
                 Dcaption.Text = "D:   " + list[select].D;
                 developerLabel.Text = list[select].Answer.ToString(); //for testing
             }
-            
+
         }
 
         private void Acaption_Click(object sender, EventArgs e)
@@ -264,18 +275,17 @@ namespace MemoryGames
                 {
                     Acaption.BackColor = Color.LightGreen;
                     timer1.Stop();
+                    soundplayer = new SoundPlayer(@"../../Resources/Kvizjatek_correct-answer.wav");
+                    soundplayer.Play();
                 }
                 else
                 {
                     Acaption.BackColor = Color.Red;
                     timer1.Stop();
+                    soundplayer = new SoundPlayer(@"../../Resources/Kvizjatek_wrong-answer.wav");
+                    soundplayer.Play();
                 }
             }
-        }
-
-        private void label23_Click(object sender, EventArgs e)
-        {
-
         }
 
         private void Bcaption_Click(object sender, EventArgs e)
@@ -288,11 +298,15 @@ namespace MemoryGames
                 {
                     Bcaption.BackColor = Color.LightGreen;
                     timer1.Stop();
+                    soundplayer = new SoundPlayer(@"../../Resources/Kvizjatek_correct-answer.wav");
+                    soundplayer.Play();
                 }
                 else
                 {
                     Bcaption.BackColor = Color.Red;
                     timer1.Stop();
+                    soundplayer = new SoundPlayer(@"../../Resources/Kvizjatek_wrong-answer.wav");
+                    soundplayer.Play();
                 }
             }
         }
@@ -307,11 +321,15 @@ namespace MemoryGames
                 {
                     Ccaption.BackColor = Color.LightGreen;
                     timer1.Stop();
+                    soundplayer = new SoundPlayer(@"../../Resources/Kvizjatek_correct-answer.wav");
+                    soundplayer.Play();
                 }
                 else
                 {
                     Ccaption.BackColor = Color.Red;
                     timer1.Stop();
+                    soundplayer = new SoundPlayer(@"../../Resources/Kvizjatek_wrong-answer.wav");
+                    soundplayer.Play();
                 }
             }
         }
@@ -326,30 +344,29 @@ namespace MemoryGames
                 {
                     Dcaption.BackColor = Color.LightGreen;
                     timer1.Stop();
+                    soundplayer = new SoundPlayer(@"../../Resources/Kvizjatek_correct-answer.wav");
+                    soundplayer.Play();
                 }
                 else
                 {
                     Dcaption.BackColor = Color.Red;
                     timer1.Stop();
+                    soundplayer = new SoundPlayer(@"../../Resources/Kvizjatek_wrong-answer.wav");
+                    soundplayer.Play();
                 }
             }
         }
 
-        private void label16_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void Cont_Click(object sender, EventArgs e)
         {
-            tibi.Enabled= true;
+            tibi.Enabled = true;
             pictureBox6.Visible = false;
 
         }
 
         private void ImOut_Click(object sender, EventArgs e)
         {
-            Form3 form = new Form3();
+            Impressum form = new Impressum();
             form.Show();
             Visible = false;
 
@@ -357,7 +374,7 @@ namespace MemoryGames
 
         private void Fekete_Paint(object sender, PaintEventArgs e)
         {
-            BackColor = Color.Black;
+            //BackColor = Color.Black;
         }
     }
 }

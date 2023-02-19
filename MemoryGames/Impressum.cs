@@ -3,9 +3,9 @@ using System.Windows.Forms;
 
 namespace MemoryGames
 {
-    public partial class Form3 : Form
+    public partial class Impressum : Form
     {
-        public Form3()
+        public Impressum()
         {
             InitializeComponent();
         }

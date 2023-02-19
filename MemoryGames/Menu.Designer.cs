@@ -2,7 +2,7 @@
 
 namespace MemoryGames
 {
-    partial class Form1
+    partial class Menu
     {
         /// <summary>
         /// Required designer variable.
@@ -82,7 +82,7 @@ namespace MemoryGames
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(60, 13);
             this.label3.TabIndex = 4;
-            this.label3.Text = "Version 0.3";
+            this.label3.Text = "Version 0.6";
             // 
             // scoreboardListBox
             // 
