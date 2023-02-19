@@ -2,7 +2,6 @@
 using System.Collections.Generic;
 using System.Drawing;
 using System.IO;
-using System.Linq;
 using System.Windows.Forms;
 
 namespace MemoryGames
@@ -14,6 +13,9 @@ namespace MemoryGames
         Random rnd = new Random();
 
         int Round = 0;
+
+        char choice;
+        int select = 0;
 
         static void Read()
         {
@@ -43,6 +45,7 @@ namespace MemoryGames
         private void button6_Click(object sender, EventArgs e)
         {
             timer1.Enabled = true;
+            Start.Visible = false;
         }
 
         private void timer1_Tick(object sender, EventArgs e)
@@ -56,10 +59,10 @@ namespace MemoryGames
             }
         }
 
-        
+
         private void Rounds()
         {
-            if(Round == 1)
+            if (Round == 1)
             {
                 panel1.BackColor = Color.Orange;
                 label1.BackColor = Color.Orange;
@@ -69,9 +72,9 @@ namespace MemoryGames
             {
                 panel13.BackColor = Color.Orange;
                 label2.BackColor = Color.Orange;
-                label15.BackColor = Color.Orange;   
+                label15.BackColor = Color.Orange;
             }
-           else if (Round == 3)
+            else if (Round == 3)
             {
                 panel12.BackColor = Color.Orange;
                 label3.BackColor = Color.Orange;
@@ -83,7 +86,7 @@ namespace MemoryGames
                 label4.BackColor = Color.Orange;
                 label17.BackColor = Color.Orange;
 
-                
+
             }
             else if (Round == 5)
             {
@@ -93,8 +96,8 @@ namespace MemoryGames
 
                 richTextBox1.Visible = true;
                 richTextBox1.Text = "Gratulálok! Kilépőponthoz erkeztünk, ha kilépni kivánsz és el vinni a 100.000 Ft nyomd meg a  a bal alsó sarokban a kilép gombot. Ha viszont folytatni akarod akkor nyomd meg a folytatást!";
-                ImOut.Visible= true;
-                Cont.Visible= true;
+                ImOut.Visible = true;
+                Cont.Visible = true;
             }
             else if (Round == 6)
             {
@@ -138,26 +141,63 @@ namespace MemoryGames
                 label11.BackColor = Color.Orange;
                 label24.BackColor = Color.Orange;
             }
+            else if (Round == 12)
+            {
+                panel3.BackColor = Color.Orange;
+                label11.BackColor = Color.Orange;
+                label25.BackColor = Color.Orange;
+            }
+            else if (Round == 13)
+            {
+                panel15.BackColor = Color.Orange;
+                label11.BackColor = Color.Orange;
+                label26.BackColor = Color.Orange;
+            }
+            else if (Round == 14)
+            {
+                panel14.BackColor = Color.Orange;
+                label11.BackColor = Color.Orange;
+                label27.BackColor = Color.Orange;
+            }
+            else if (Round == 15)
+            {
+                panel16.BackColor = Color.Orange;
+                label11.BackColor = Color.Orange;
+                label28.BackColor = Color.Orange;
+            }
         }
+
+
+
         private void tibi_Click(object sender, EventArgs e)
         {
-            Round++; //Kör 1-12
-            for (int i = 0; i < 12; i++)
-            {
-                QuestionBox.Text = i + "." + list[i].Question;
-                Acaption.Text = "A   " + list[i].A;
-                Bcaption.Text = "B:   " + list[i].B;
-                Ccaption.Text = "C:   " + list[i].C;
-                Dcaption.Text = "D:   " + list[i].D;
-                developerLabel.Text = list[i].Answer.ToString(); //for testing
+            List<int> Numbers = new List<int>();
 
+            Round++; //Kör 1-12
+            Rounds();
+            for (int i = 0; i <= 15; i++)
+            {
+                do
+                {
+                    select = rnd.Next(0, list.Count);
+                } while (Numbers.Contains(select));
+
+                QuestionBox.Text = i + "." + list[select].Question;
+                Acaption.Text = "A   " + list[select].A;
+                Bcaption.Text = "B:   " + list[select].B;
+                Ccaption.Text = "C:   " + list[select].C;
+                Dcaption.Text = "D:   " + list[select].D;
+                developerLabel.Text = list[select].Answer.ToString(); //for testing
             }
         }
 
         private void Acaption_Click(object sender, EventArgs e)
         {
-            foreach(var item in Acaption.Text){
-                if (Acaption.Text.Contains(list[item].Answer.ToString()))
+            choice = 'A';
+
+            for (int i = 0; i <= 15; i++)
+            {
+                if (choice == list[select].Answer)
                 {
                     Acaption.BackColor = Color.LightGreen;
                 }
@@ -169,6 +209,62 @@ namespace MemoryGames
         }
 
         private void label23_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Bcaption_Click(object sender, EventArgs e)
+        {
+            choice = 'B';
+
+            for (int i = 0; i <= 15; i++)
+            {
+                if (choice == list[select].Answer)
+                {
+                    Bcaption.BackColor = Color.LightGreen;
+                }
+                else
+                {
+                    Bcaption.BackColor = Color.Red;
+                }
+            }
+        }
+
+        private void Ccaption_Click(object sender, EventArgs e)
+        {
+            choice = 'C';
+
+            for (int i = 0; i <= 15; i++)
+            {
+                if (choice == list[select].Answer)
+                {
+                    Ccaption.BackColor = Color.LightGreen;
+                }
+                else
+                {
+                    Ccaption.BackColor = Color.Red;
+                }
+            }
+        }
+
+        private void Dcaption_Click(object sender, EventArgs e)
+        {
+            choice = 'D';
+
+            for (int i = 0; i <= 15; i++)
+            {
+                if (choice == list[select].Answer)
+                {
+                    Dcaption.BackColor = Color.LightGreen;
+                }
+                else
+                {
+                    Dcaption.BackColor = Color.Red;
+                }
+            }
+        }
+
+        private void label16_Click(object sender, EventArgs e)
         {
 
         }
