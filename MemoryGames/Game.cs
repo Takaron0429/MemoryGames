@@ -261,6 +261,8 @@ namespace MemoryGames
                 Ccaption.Text = "C:   " + list[select].C;
                 Dcaption.Text = "D:   " + list[select].D;
                 developerLabel.Text = list[select].Answer.ToString(); //for testing
+
+                tibi.Enabled = false;
             }
 
         }
@@ -277,6 +279,7 @@ namespace MemoryGames
                     timer1.Stop();
                     soundplayer = new SoundPlayer(@"../../Resources/Kvizjatek_correct-answer.wav");
                     soundplayer.Play();
+                    tibi.Enabled = true;
                 }
                 else
                 {
@@ -284,6 +287,7 @@ namespace MemoryGames
                     timer1.Stop();
                     soundplayer = new SoundPlayer(@"../../Resources/Kvizjatek_wrong-answer.wav");
                     soundplayer.Play();
+                    tibi.Enabled = true;
                 }
             }
         }
@@ -300,6 +304,7 @@ namespace MemoryGames
                     timer1.Stop();
                     soundplayer = new SoundPlayer(@"../../Resources/Kvizjatek_correct-answer.wav");
                     soundplayer.Play();
+                    tibi.Enabled = true;
                 }
                 else
                 {
@@ -307,6 +312,7 @@ namespace MemoryGames
                     timer1.Stop();
                     soundplayer = new SoundPlayer(@"../../Resources/Kvizjatek_wrong-answer.wav");
                     soundplayer.Play();
+                    tibi.Enabled = true;
                 }
             }
         }
@@ -323,6 +329,7 @@ namespace MemoryGames
                     timer1.Stop();
                     soundplayer = new SoundPlayer(@"../../Resources/Kvizjatek_correct-answer.wav");
                     soundplayer.Play();
+                    tibi.Enabled = true;
                 }
                 else
                 {
@@ -330,6 +337,7 @@ namespace MemoryGames
                     timer1.Stop();
                     soundplayer = new SoundPlayer(@"../../Resources/Kvizjatek_wrong-answer.wav");
                     soundplayer.Play();
+                    tibi.Enabled = true;
                 }
             }
         }
@@ -346,6 +354,7 @@ namespace MemoryGames
                     timer1.Stop();
                     soundplayer = new SoundPlayer(@"../../Resources/Kvizjatek_correct-answer.wav");
                     soundplayer.Play();
+                    tibi.Enabled = true;
                 }
                 else
                 {
@@ -353,6 +362,7 @@ namespace MemoryGames
                     timer1.Stop();
                     soundplayer = new SoundPlayer(@"../../Resources/Kvizjatek_wrong-answer.wav");
                     soundplayer.Play();
+                    tibi.Enabled = true;
                 }
             }
         }

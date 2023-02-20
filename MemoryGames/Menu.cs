@@ -37,5 +37,11 @@ namespace MemoryGames
             Impressum f3 = new Impressum();
             f3.ShowDialog();
         }
+
+        private void helpButton_Click(object sender, EventArgs e)
+        {
+            Help f5 = new Help();
+            f5.ShowDialog();
+        }
     }
 }
