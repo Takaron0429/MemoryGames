@@ -99,6 +99,16 @@
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.pictureBox6 = new System.Windows.Forms.PictureBox();
             this.pictureBox7 = new System.Windows.Forms.PictureBox();
+            this.AskBack = new System.Windows.Forms.PictureBox();
+            this.Aska = new System.Windows.Forms.Label();
+            this.Askb = new System.Windows.Forms.Label();
+            this.Askc = new System.Windows.Forms.Label();
+            this.Askd = new System.Windows.Forms.Label();
+            this.Ask = new System.Windows.Forms.Button();
+            this.progressBar1 = new System.Windows.Forms.ProgressBar();
+            this.progressBar2 = new System.Windows.Forms.ProgressBar();
+            this.progressBar3 = new System.Windows.Forms.ProgressBar();
+            this.progressBar4 = new System.Windows.Forms.ProgressBar();
             this.panel1.SuspendLayout();
             this.panel3.SuspendLayout();
             this.panel4.SuspendLayout();
@@ -120,6 +130,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.AskBack)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -200,7 +211,7 @@
             this.tibi.Enabled = false;
             this.tibi.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.tibi.ForeColor = System.Drawing.Color.White;
-            this.tibi.Location = new System.Drawing.Point(21, 149);
+            this.tibi.Location = new System.Drawing.Point(38, 149);
             this.tibi.Name = "tibi";
             this.tibi.Size = new System.Drawing.Size(100, 42);
             this.tibi.TabIndex = 19;
@@ -841,6 +852,7 @@
             this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox4.TabIndex = 55;
             this.pictureBox4.TabStop = false;
+            this.pictureBox4.Click += new System.EventHandler(this.pictureBox4_Click);
             // 
             // pictureBox3
             // 
@@ -901,13 +913,123 @@
             this.pictureBox7.TabIndex = 73;
             this.pictureBox7.TabStop = false;
             // 
-            // Form2
+            // AskBack
+            // 
+            this.AskBack.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
+            this.AskBack.Location = new System.Drawing.Point(12, 390);
+            this.AskBack.Name = "AskBack";
+            this.AskBack.Size = new System.Drawing.Size(151, 178);
+            this.AskBack.TabIndex = 75;
+            this.AskBack.TabStop = false;
+            this.AskBack.Visible = false;
+            // 
+            // Aska
+            // 
+            this.Aska.AutoSize = true;
+            this.Aska.BackColor = System.Drawing.Color.White;
+            this.Aska.Location = new System.Drawing.Point(24, 407);
+            this.Aska.Name = "Aska";
+            this.Aska.Size = new System.Drawing.Size(17, 13);
+            this.Aska.TabIndex = 76;
+            this.Aska.Text = "A:";
+            this.Aska.Visible = false;
+            // 
+            // Askb
+            // 
+            this.Askb.AutoSize = true;
+            this.Askb.BackColor = System.Drawing.Color.White;
+            this.Askb.Location = new System.Drawing.Point(24, 436);
+            this.Askb.Name = "Askb";
+            this.Askb.Size = new System.Drawing.Size(17, 13);
+            this.Askb.TabIndex = 77;
+            this.Askb.Text = "B:";
+            this.Askb.Visible = false;
+            this.Askb.Click += new System.EventHandler(this.label32_Click);
+            // 
+            // Askc
+            // 
+            this.Askc.AutoSize = true;
+            this.Askc.BackColor = System.Drawing.Color.White;
+            this.Askc.Location = new System.Drawing.Point(24, 465);
+            this.Askc.Name = "Askc";
+            this.Askc.Size = new System.Drawing.Size(17, 13);
+            this.Askc.TabIndex = 78;
+            this.Askc.Text = "C:";
+            this.Askc.Visible = false;
+            // 
+            // Askd
+            // 
+            this.Askd.AutoSize = true;
+            this.Askd.BackColor = System.Drawing.Color.White;
+            this.Askd.Location = new System.Drawing.Point(23, 493);
+            this.Askd.Name = "Askd";
+            this.Askd.Size = new System.Drawing.Size(18, 13);
+            this.Askd.TabIndex = 79;
+            this.Askd.Text = "D:";
+            this.Askd.Visible = false;
+            // 
+            // Ask
+            // 
+            this.Ask.BackColor = System.Drawing.Color.LimeGreen;
+            this.Ask.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.Ask.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.Ask.Location = new System.Drawing.Point(53, 527);
+            this.Ask.Name = "Ask";
+            this.Ask.Size = new System.Drawing.Size(85, 27);
+            this.Ask.TabIndex = 80;
+            this.Ask.Text = "Rákérdez";
+            this.Ask.UseVisualStyleBackColor = false;
+            this.Ask.Visible = false;
+            // 
+            // progressBar1
+            // 
+            this.progressBar1.Location = new System.Drawing.Point(59, 404);
+            this.progressBar1.Name = "progressBar1";
+            this.progressBar1.Size = new System.Drawing.Size(79, 16);
+            this.progressBar1.TabIndex = 81;
+            this.progressBar1.Visible = false;
+            // 
+            // progressBar2
+            // 
+            this.progressBar2.Location = new System.Drawing.Point(59, 436);
+            this.progressBar2.Name = "progressBar2";
+            this.progressBar2.Size = new System.Drawing.Size(79, 16);
+            this.progressBar2.TabIndex = 82;
+            this.progressBar2.Visible = false;
+            // 
+            // progressBar3
+            // 
+            this.progressBar3.Location = new System.Drawing.Point(59, 465);
+            this.progressBar3.Name = "progressBar3";
+            this.progressBar3.Size = new System.Drawing.Size(79, 16);
+            this.progressBar3.TabIndex = 83;
+            this.progressBar3.Visible = false;
+            // 
+            // progressBar4
+            // 
+            this.progressBar4.Location = new System.Drawing.Point(60, 493);
+            this.progressBar4.Name = "progressBar4";
+            this.progressBar4.Size = new System.Drawing.Size(78, 16);
+            this.progressBar4.TabIndex = 84;
+            this.progressBar4.Visible = false;
+            // 
+            // Game
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(43)))), ((int)(((byte)(83)))));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1125, 634);
+            this.Controls.Add(this.progressBar4);
+            this.Controls.Add(this.progressBar3);
+            this.Controls.Add(this.progressBar2);
+            this.Controls.Add(this.progressBar1);
+            this.Controls.Add(this.Ask);
+            this.Controls.Add(this.Askd);
+            this.Controls.Add(this.Askc);
+            this.Controls.Add(this.Askb);
+            this.Controls.Add(this.Aska);
+            this.Controls.Add(this.AskBack);
             this.Controls.Add(this.Win);
             this.Controls.Add(this.label30);
             this.Controls.Add(this.panel17);
@@ -964,7 +1086,7 @@
             this.Controls.Add(this.pictureBox6);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.MaximizeBox = false;
-            this.Name = "Form2";
+            this.Name = "Game";
             this.Text = "Legyen Ön is milliomos! (Fejlesztés alatt)";
             this.Load += new System.EventHandler(this.Form2_Load);
             this.panel1.ResumeLayout(false);
@@ -1001,6 +1123,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.AskBack)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -1076,5 +1199,15 @@
         private System.Windows.Forms.TextBox Win;
         private System.Windows.Forms.PictureBox pictureBox7;
         private System.Windows.Forms.PictureBox pictureBox8;
+        private System.Windows.Forms.PictureBox AskBack;
+        private System.Windows.Forms.Label Aska;
+        private System.Windows.Forms.Label Askb;
+        private System.Windows.Forms.Label Askc;
+        private System.Windows.Forms.Label Askd;
+        private System.Windows.Forms.Button Ask;
+        private System.Windows.Forms.ProgressBar progressBar1;
+        private System.Windows.Forms.ProgressBar progressBar2;
+        private System.Windows.Forms.ProgressBar progressBar3;
+        private System.Windows.Forms.ProgressBar progressBar4;
     }
 }

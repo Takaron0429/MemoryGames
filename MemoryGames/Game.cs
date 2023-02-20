@@ -376,5 +376,26 @@ namespace MemoryGames
         {
             //BackColor = Color.Black;
         }
+
+        private void label32_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox4_Click(object sender, EventArgs e)
+        {
+            Ask.Visible = true;
+            AskBack.Visible = true; 
+            progressBar1.Visible = true;
+            progressBar2.Visible = true;
+            progressBar3.Visible = true;
+            progressBar4.Visible = true;
+
+            Aska.Visible = true;
+            Askb.Visible = true;
+            Askc.Visible = true;
+            Askd.Visible = true;
+            AskBack.Visible = true;
+        }
     }
 }
