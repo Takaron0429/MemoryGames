@@ -37,6 +37,7 @@ namespace MemoryGames
             this.scoreboardListBox = new System.Windows.Forms.ListBox();
             this.scoreboardLabel = new System.Windows.Forms.Label();
             this.impressumLabel = new System.Windows.Forms.Label();
+            this.helpButton = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // startButton
@@ -44,7 +45,7 @@ namespace MemoryGames
             this.startButton.BackColor = System.Drawing.SystemColors.Control;
             this.startButton.Font = new System.Drawing.Font("Showcard Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.startButton.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.startButton.Location = new System.Drawing.Point(630, 153);
+            this.startButton.Location = new System.Drawing.Point(624, 141);
             this.startButton.Name = "startButton";
             this.startButton.Size = new System.Drawing.Size(121, 53);
             this.startButton.TabIndex = 1;
@@ -56,7 +57,7 @@ namespace MemoryGames
             // 
             this.exitButton.Font = new System.Drawing.Font("Showcard Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.exitButton.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.exitButton.Location = new System.Drawing.Point(630, 260);
+            this.exitButton.Location = new System.Drawing.Point(624, 259);
             this.exitButton.Name = "exitButton";
             this.exitButton.Size = new System.Drawing.Size(121, 53);
             this.exitButton.TabIndex = 2;
@@ -82,7 +83,7 @@ namespace MemoryGames
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(60, 13);
             this.label3.TabIndex = 4;
-            this.label3.Text = "Version 0.6";
+            this.label3.Text = "Version 0.7";
             // 
             // scoreboardListBox
             // 
@@ -110,14 +111,25 @@ namespace MemoryGames
             this.impressumLabel.AutoSize = true;
             this.impressumLabel.Font = new System.Drawing.Font("Showcard Gothic", 9.75F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.impressumLabel.ForeColor = System.Drawing.SystemColors.Control;
-            this.impressumLabel.Location = new System.Drawing.Point(358, 428);
+            this.impressumLabel.Location = new System.Drawing.Point(355, 428);
             this.impressumLabel.Name = "impressumLabel";
             this.impressumLabel.Size = new System.Drawing.Size(92, 17);
             this.impressumLabel.TabIndex = 7;
             this.impressumLabel.Text = "Impresszum";
             this.impressumLabel.Click += new System.EventHandler(this.impressumLabel_Click);
             // 
-            // Form1
+            // helpButton
+            // 
+            this.helpButton.Font = new System.Drawing.Font("Showcard Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.helpButton.Location = new System.Drawing.Point(624, 200);
+            this.helpButton.Name = "helpButton";
+            this.helpButton.Size = new System.Drawing.Size(121, 53);
+            this.helpButton.TabIndex = 8;
+            this.helpButton.Text = "SÚGÓ";
+            this.helpButton.UseVisualStyleBackColor = true;
+            this.helpButton.Click += new System.EventHandler(this.helpButton_Click);
+            // 
+            // Menu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -125,6 +137,7 @@ namespace MemoryGames
             this.BackgroundImage = global::MemoryGames.Properties.Resources.legyen_on_is_milliomos;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.helpButton);
             this.Controls.Add(this.impressumLabel);
             this.Controls.Add(this.scoreboardLabel);
             this.Controls.Add(this.scoreboardListBox);
@@ -135,7 +148,7 @@ namespace MemoryGames
             this.DoubleBuffered = true;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.MaximizeBox = false;
-            this.Name = "Form1";
+            this.Name = "Menu";
             this.Text = "Legyen Ön is milliomos! (Fejlesztés alatt)";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
@@ -151,6 +164,7 @@ namespace MemoryGames
         private System.Windows.Forms.ListBox scoreboardListBox;
         private System.Windows.Forms.Label scoreboardLabel;
         private System.Windows.Forms.Label impressumLabel;
+        private System.Windows.Forms.Button helpButton;
     }
 }
 
