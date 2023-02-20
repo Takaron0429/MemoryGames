@@ -280,6 +280,7 @@ namespace MemoryGames
                     soundplayer = new SoundPlayer(@"../../Resources/Kvizjatek_correct-answer.wav");
                     soundplayer.Play();
                     tibi.Enabled = true;
+                  
                 }
                 else
                 {
@@ -288,6 +289,10 @@ namespace MemoryGames
                     soundplayer = new SoundPlayer(@"../../Resources/Kvizjatek_wrong-answer.wav");
                     soundplayer.Play();
                     tibi.Enabled = true;
+                }
+                if (Community.Visible == false)
+                {
+                    Community_false();
                 }
             }
         }
@@ -305,6 +310,7 @@ namespace MemoryGames
                     soundplayer = new SoundPlayer(@"../../Resources/Kvizjatek_correct-answer.wav");
                     soundplayer.Play();
                     tibi.Enabled = true;
+                    
                 }
                 else
                 {
@@ -313,6 +319,10 @@ namespace MemoryGames
                     soundplayer = new SoundPlayer(@"../../Resources/Kvizjatek_wrong-answer.wav");
                     soundplayer.Play();
                     tibi.Enabled = true;
+                }
+                if (Community.Visible == false)
+                {
+                    Community_false();
                 }
             }
         }
@@ -339,6 +349,10 @@ namespace MemoryGames
                     soundplayer.Play();
                     tibi.Enabled = true;
                 }
+                if (Community.Visible == false)
+                {
+                    Community_false();
+                }
             }
         }
 
@@ -363,6 +377,10 @@ namespace MemoryGames
                     soundplayer = new SoundPlayer(@"../../Resources/Kvizjatek_wrong-answer.wav");
                     soundplayer.Play();
                     tibi.Enabled = true;
+                }
+                if (Community.Visible == false)
+                {
+                    Community_false();
                 }
             }
         }
@@ -394,18 +412,58 @@ namespace MemoryGames
 
         private void pictureBox4_Click(object sender, EventArgs e)
         {
+            mp += 10;
             Ask.Visible = true;
             AskBack.Visible = true; 
             progressBar1.Visible = true;
             progressBar2.Visible = true;
             progressBar3.Visible = true;
             progressBar4.Visible = true;
-
+            progressBar1.Visible=true;
             Aska.Visible = true;
             Askb.Visible = true;
             Askc.Visible = true;
             Askd.Visible = true;
             AskBack.Visible = true;
+
+            Community.Visible = false;
+
+           
+        }
+        private void Community_false()
+        {
+            Ask.Visible = false;
+            AskBack.Visible = false;
+            progressBar1.Visible = false;
+            progressBar2.Visible = false;
+            progressBar3.Visible = false;
+            progressBar4.Visible = false;
+            progressBar1.Visible = false;
+            Aska.Visible = false;
+            Askb.Visible = false;
+            Askc.Visible = false;
+            Askd.Visible = false;
+        }
+        private void Ask_Click(object sender, EventArgs e)
+        {
+
+            int Bar1 = rnd.Next(0, 100);
+            int Bar2 = rnd.Next(0, 100);
+            int Bar3 = rnd.Next(0, 100);
+            int Bar4 = rnd.Next(0, 100);
+
+            while (Bar1 + Bar2 + Bar3 + Bar4 != 100)
+            {
+                Bar1 = rnd.Next(0, 100);
+                Bar2 = rnd.Next(0, 100);
+                Bar3 = rnd.Next(0, 100);
+                Bar4 = rnd.Next(0, 100);
+                
+            }
+            progressBar1.Value = Bar1;
+            progressBar2.Value = Bar2;
+            progressBar3.Value = Bar3;
+            progressBar4.Value = Bar4;
         }
     }
 }

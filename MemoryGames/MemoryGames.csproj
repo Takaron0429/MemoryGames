@@ -120,6 +120,7 @@
     <None Include="Resources\legyen-on-is-milliomos.jpg" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\Vago.jpg" />
     <None Include="Resources\tablet-frame.png" />
     <None Include="Resources\tel.png" />
     <None Include="Resources\tag2.PNG" />
