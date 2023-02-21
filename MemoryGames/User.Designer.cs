@@ -58,6 +58,7 @@
             this.userTextBox.Size = new System.Drawing.Size(228, 24);
             this.userTextBox.TabIndex = 1;
             this.userTextBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.userTextBox.TextChanged += new System.EventHandler(this.userTextBox_TextChanged);
             // 
             // playButton
             // 
