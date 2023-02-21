@@ -127,6 +127,7 @@ namespace MemoryGames
                 Dcaption.Visible = false;
 
                 timer1.Stop();
+               
             }
             else if (Round == 6)
             {
@@ -221,10 +222,11 @@ namespace MemoryGames
                 Ccaption.Visible = false;
                 Dcaption.Visible = false;
 
+                this.Close();
                 End f6 = new End();
                 this.Hide();
                 f6.ShowDialog();
-                this.Close();
+               
             }
         }
 
@@ -395,9 +397,23 @@ namespace MemoryGames
 
         private void ImOut_Click(object sender, EventArgs e)
         {
-            Impressum form = new Impressum();
-            form.Show();
-            Visible = false;
+          if(Round == 5)
+            {
+                StreamWriter file = new StreamWriter("../../Resources/money.txt");
+                file.WriteLine("100.000 Ft");
+                file.Close();
+            }
+           else if (Round == 10)
+            {
+                StreamWriter file = new StreamWriter("../../Resources/money.txt");
+                file.WriteLine("1.500.000 Ft");
+                file.Close();
+            }
+
+            End f6 = new End();
+            this.Hide();
+            f6.ShowDialog();
+            this.Close();
         }
 
         private void pictureBox4_Click(object sender, EventArgs e)

@@ -94,6 +94,7 @@ namespace MemoryGames
             this.scoreboardListBox.Name = "scoreboardListBox";
             this.scoreboardListBox.Size = new System.Drawing.Size(178, 199);
             this.scoreboardListBox.TabIndex = 5;
+            this.scoreboardListBox.SelectedIndexChanged += new System.EventHandler(this.scoreboardListBox_SelectedIndexChanged);
             // 
             // scoreboardLabel
             // 
