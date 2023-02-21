@@ -256,7 +256,7 @@ namespace MemoryGames
                 soundplayer.Play();
 
                 QuestionBox.Text = list[select].Question;
-                Acaption.Text = "A   " + list[select].A;
+                Acaption.Text = "A:   " + list[select].A;
                 Bcaption.Text = "B:   " + list[select].B;
                 Ccaption.Text = "C:   " + list[select].C;
                 Dcaption.Text = "D:   " + list[select].D;
@@ -464,6 +464,22 @@ namespace MemoryGames
             progressBar2.Value = Bar2;
             progressBar3.Value = Bar3;
             progressBar4.Value = Bar4;
+
+            Ask.Enabled = false;
+        }
+
+        private void pictureBox3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox2_Click(object sender, EventArgs e)
+        {
+            End f6= new End();
+            this.Hide();
+            f6.ShowDialog();
+            this.Close();
+
         }
     }
 }

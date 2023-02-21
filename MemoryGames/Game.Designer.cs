@@ -100,7 +100,6 @@
             this.progressBar2 = new System.Windows.Forms.ProgressBar();
             this.progressBar3 = new System.Windows.Forms.ProgressBar();
             this.progressBar4 = new System.Windows.Forms.ProgressBar();
-            this.AskBack = new System.Windows.Forms.PictureBox();
             this.Community = new System.Windows.Forms.PictureBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
@@ -109,6 +108,7 @@
             this.pictureBox7 = new System.Windows.Forms.PictureBox();
             this.pictureBox8 = new System.Windows.Forms.PictureBox();
             this.pictureBox6 = new System.Windows.Forms.PictureBox();
+            this.AskBack = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
             this.panel3.SuspendLayout();
             this.panel4.SuspendLayout();
@@ -122,7 +122,6 @@
             this.panel15.SuspendLayout();
             this.panel16.SuspendLayout();
             this.panel17.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.AskBack)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Community)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -131,6 +130,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.AskBack)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -610,9 +610,9 @@
             this.Acaption.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Acaption.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.Acaption.ForeColor = System.Drawing.SystemColors.Control;
-            this.Acaption.Location = new System.Drawing.Point(276, 443);
+            this.Acaption.Location = new System.Drawing.Point(252, 443);
             this.Acaption.Name = "Acaption";
-            this.Acaption.Size = new System.Drawing.Size(152, 38);
+            this.Acaption.Size = new System.Drawing.Size(213, 38);
             this.Acaption.TabIndex = 3;
             this.Acaption.UseVisualStyleBackColor = false;
             this.Acaption.Click += new System.EventHandler(this.Acaption_Click);
@@ -635,9 +635,9 @@
             this.Bcaption.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Bcaption.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.Bcaption.ForeColor = System.Drawing.SystemColors.Control;
-            this.Bcaption.Location = new System.Drawing.Point(595, 443);
+            this.Bcaption.Location = new System.Drawing.Point(556, 443);
             this.Bcaption.Name = "Bcaption";
-            this.Bcaption.Size = new System.Drawing.Size(152, 38);
+            this.Bcaption.Size = new System.Drawing.Size(216, 38);
             this.Bcaption.TabIndex = 58;
             this.Bcaption.UseVisualStyleBackColor = false;
             this.Bcaption.Click += new System.EventHandler(this.Bcaption_Click);
@@ -649,9 +649,9 @@
             this.Dcaption.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Dcaption.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.Dcaption.ForeColor = System.Drawing.SystemColors.Control;
-            this.Dcaption.Location = new System.Drawing.Point(595, 498);
+            this.Dcaption.Location = new System.Drawing.Point(556, 498);
             this.Dcaption.Name = "Dcaption";
-            this.Dcaption.Size = new System.Drawing.Size(152, 38);
+            this.Dcaption.Size = new System.Drawing.Size(216, 38);
             this.Dcaption.TabIndex = 59;
             this.Dcaption.UseVisualStyleBackColor = false;
             this.Dcaption.Click += new System.EventHandler(this.Dcaption_Click);
@@ -663,9 +663,9 @@
             this.Ccaption.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Ccaption.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.Ccaption.ForeColor = System.Drawing.SystemColors.Control;
-            this.Ccaption.Location = new System.Drawing.Point(276, 498);
+            this.Ccaption.Location = new System.Drawing.Point(252, 498);
             this.Ccaption.Name = "Ccaption";
-            this.Ccaption.Size = new System.Drawing.Size(152, 37);
+            this.Ccaption.Size = new System.Drawing.Size(213, 37);
             this.Ccaption.TabIndex = 60;
             this.Ccaption.UseVisualStyleBackColor = false;
             this.Ccaption.Click += new System.EventHandler(this.Ccaption_Click);
@@ -932,16 +932,6 @@
             this.progressBar4.TabIndex = 84;
             this.progressBar4.Visible = false;
             // 
-            // AskBack
-            // 
-            this.AskBack.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
-            this.AskBack.Location = new System.Drawing.Point(12, 390);
-            this.AskBack.Name = "AskBack";
-            this.AskBack.Size = new System.Drawing.Size(151, 178);
-            this.AskBack.TabIndex = 75;
-            this.AskBack.TabStop = false;
-            this.AskBack.Visible = false;
-            // 
             // Community
             // 
             this.Community.BackColor = System.Drawing.Color.Transparent;
@@ -963,6 +953,7 @@
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox3.TabIndex = 54;
             this.pictureBox3.TabStop = false;
+            this.pictureBox3.Click += new System.EventHandler(this.pictureBox3_Click);
             // 
             // pictureBox2
             // 
@@ -973,6 +964,7 @@
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox2.TabIndex = 53;
             this.pictureBox2.TabStop = false;
+            this.pictureBox2.Click += new System.EventHandler(this.pictureBox2_Click);
             // 
             // pictureBox1
             // 
@@ -1025,6 +1017,16 @@
             this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
             this.pictureBox6.TabIndex = 61;
             this.pictureBox6.TabStop = false;
+            // 
+            // AskBack
+            // 
+            this.AskBack.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
+            this.AskBack.Location = new System.Drawing.Point(12, 390);
+            this.AskBack.Name = "AskBack";
+            this.AskBack.Size = new System.Drawing.Size(151, 178);
+            this.AskBack.TabIndex = 75;
+            this.AskBack.TabStop = false;
+            this.AskBack.Visible = false;
             // 
             // Game
             // 
@@ -1128,7 +1130,6 @@
             this.panel16.PerformLayout();
             this.panel17.ResumeLayout(false);
             this.panel17.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.AskBack)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Community)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
@@ -1137,6 +1138,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.AskBack)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
