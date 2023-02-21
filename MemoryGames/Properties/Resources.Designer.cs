@@ -63,6 +63,16 @@ namespace MemoryGames.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap box {
+            get {
+                object obj = ResourceManager.GetObject("box", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap digital_clock {
             get {
                 object obj = ResourceManager.GetObject("digital-clock", resourceCulture);
@@ -113,6 +123,26 @@ namespace MemoryGames.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap money40 {
+            get {
+                object obj = ResourceManager.GetObject("money40", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap name {
+            get {
+                object obj = ResourceManager.GetObject("name", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap tablet_frame {
             get {
                 object obj = ResourceManager.GetObject("tablet-frame", resourceCulture);
@@ -136,6 +166,26 @@ namespace MemoryGames.Properties {
         internal static System.Drawing.Bitmap tel {
             get {
                 object obj = ResourceManager.GetObject("tel", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Tibi {
+            get {
+                object obj = ResourceManager.GetObject("Tibi", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Vago {
+            get {
+                object obj = ResourceManager.GetObject("Vago", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

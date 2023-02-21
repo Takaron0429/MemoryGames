@@ -121,7 +121,7 @@
     <value>17, 17</value>
   </metadata>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="pictureBox4.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="Community.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAPQAAAC/CAYAAADJsPFRAAAABGdBTUEAALGPC/xhBQAA1nJJREFUeF7s
         XQdgltXV/rLZsrL3Juy9ZLi1dlhrtdWqtXbY1tFqh4OV5FtZgFbt0GrVamvraN11I0P2ngGSEAJJCHsT
