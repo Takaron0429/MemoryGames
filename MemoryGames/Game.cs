@@ -127,6 +127,7 @@ namespace MemoryGames
                 Dcaption.Visible = false;
 
                 timer1.Stop();
+               
             }
             else if (Round == 6)
             {
@@ -220,11 +221,15 @@ namespace MemoryGames
                 Bcaption.Visible = false;
                 Ccaption.Visible = false;
                 Dcaption.Visible = false;
+                StreamWriter file = new StreamWriter("../../Resources/money.txt");
+                file.WriteLine("40.000.000 Ft");
+                file.Close();
 
+                this.Close();
                 End f6 = new End();
                 this.Hide();
                 f6.ShowDialog();
-                this.Close();
+               
             }
         }
 
@@ -286,6 +291,8 @@ namespace MemoryGames
                     soundplayer = new SoundPlayer(@"../../Resources/Kvizjatek_correct-answer.wav");
                     soundplayer.Play();
                     tibi.Enabled = true;
+
+
                 }
                 else
                 {
@@ -401,9 +408,23 @@ namespace MemoryGames
 
         private void ImOut_Click(object sender, EventArgs e)
         {
-            Impressum form = new Impressum();
-            form.Show();
-            Visible = false;
+          if(Round == 5)
+            {
+                StreamWriter file = new StreamWriter("../../Resources/money.txt");
+                file.WriteLine("100.000 Ft");
+                file.Close();
+            }
+           else if (Round == 10)
+            {
+                StreamWriter file = new StreamWriter("../../Resources/money.txt");
+                file.WriteLine("1.500.000 Ft");
+                file.Close();
+            }
+
+            End f6 = new End();
+            this.Hide();
+            f6.ShowDialog();
+            this.Close();
         }
 
         private void pictureBox4_Click(object sender, EventArgs e)

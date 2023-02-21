@@ -724,6 +724,7 @@
             this.QuestionBox.Size = new System.Drawing.Size(424, 61);
             this.QuestionBox.TabIndex = 2;
             this.QuestionBox.Text = "";
+            this.QuestionBox.Visible = false;
             // 
             // label13
             // 

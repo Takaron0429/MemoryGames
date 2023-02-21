@@ -6,7 +6,7 @@ namespace MemoryGames
 {
     public partial class User : Form
     {
-        StreamWriter file = new StreamWriter("username.txt");
+        
         public User()
         {
             InitializeComponent();
@@ -14,19 +14,18 @@ namespace MemoryGames
        
         private void playButton_Click(object sender, EventArgs e)
         {
-            foreach (var item in userTextBox.Text)
-            {
-                file.WriteLine(item);
-            }
+            StreamWriter file = new StreamWriter("../../Resources/username.txt");
+            file.WriteLine(userTextBox.Text);
+            file.Close();
 
             Game f2 = new Game();
             this.Hide();
             f2.ShowDialog();
             this.Close();
 
-
+            
         }
-      
+       
         private void userTextBox_TextChanged(object sender, EventArgs e)
         {
             
