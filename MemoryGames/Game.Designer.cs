@@ -100,8 +100,8 @@
             this.progressBar3 = new System.Windows.Forms.ProgressBar();
             this.progressBar4 = new System.Windows.Forms.ProgressBar();
             this.Community = new System.Windows.Forms.PictureBox();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.Phone = new System.Windows.Forms.PictureBox();
+            this.Halved = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.pictureBox7 = new System.Windows.Forms.PictureBox();
@@ -125,8 +125,8 @@
             this.panel16.SuspendLayout();
             this.panel17.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.Community)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Phone)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Halved)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
@@ -213,7 +213,7 @@
             this.tibi.Enabled = false;
             this.tibi.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.tibi.ForeColor = System.Drawing.Color.White;
-            this.tibi.Location = new System.Drawing.Point(26, 152);
+            this.tibi.Location = new System.Drawing.Point(23, 152);
             this.tibi.Name = "tibi";
             this.tibi.Size = new System.Drawing.Size(100, 42);
             this.tibi.TabIndex = 19;
@@ -704,7 +704,7 @@
             this.richTextBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.richTextBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.richTextBox1.ForeColor = System.Drawing.SystemColors.Control;
-            this.richTextBox1.Location = new System.Drawing.Point(156, 15);
+            this.richTextBox1.Location = new System.Drawing.Point(155, 21);
             this.richTextBox1.Name = "richTextBox1";
             this.richTextBox1.Size = new System.Drawing.Size(198, 123);
             this.richTextBox1.TabIndex = 65;
@@ -833,7 +833,7 @@
             this.Win.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.Win.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.Win.ForeColor = System.Drawing.SystemColors.Control;
-            this.Win.Location = new System.Drawing.Point(156, 116);
+            this.Win.Location = new System.Drawing.Point(152, 124);
             this.Win.Name = "Win";
             this.Win.Size = new System.Drawing.Size(197, 15);
             this.Win.TabIndex = 72;
@@ -949,26 +949,27 @@
             this.Community.TabStop = false;
             this.Community.Click += new System.EventHandler(this.pictureBox4_Click);
             // 
-            // pictureBox3
+            // Phone
             // 
-            this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
-            this.pictureBox3.Location = new System.Drawing.Point(889, 29);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(100, 73);
-            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox3.TabIndex = 54;
-            this.pictureBox3.TabStop = false;
+            this.Phone.Image = ((System.Drawing.Image)(resources.GetObject("Phone.Image")));
+            this.Phone.Location = new System.Drawing.Point(889, 29);
+            this.Phone.Name = "Phone";
+            this.Phone.Size = new System.Drawing.Size(100, 73);
+            this.Phone.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.Phone.TabIndex = 54;
+            this.Phone.TabStop = false;
+            this.Phone.Click += new System.EventHandler(this.Phone_Click);
             // 
-            // pictureBox2
+            // Halved
             // 
-            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(760, 25);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(111, 82);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox2.TabIndex = 53;
-            this.pictureBox2.TabStop = false;
-            this.pictureBox2.Click += new System.EventHandler(this.pictureBox2_Click);
+            this.Halved.Image = ((System.Drawing.Image)(resources.GetObject("Halved.Image")));
+            this.Halved.Location = new System.Drawing.Point(760, 25);
+            this.Halved.Name = "Halved";
+            this.Halved.Size = new System.Drawing.Size(111, 82);
+            this.Halved.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.Halved.TabIndex = 53;
+            this.Halved.TabStop = false;
+            this.Halved.Click += new System.EventHandler(this.Halved_Click);
             // 
             // pictureBox1
             // 
@@ -1004,7 +1005,7 @@
             // pictureBox8
             // 
             this.pictureBox8.Image = global::MemoryGames.Properties.Resources.tablet_frame;
-            this.pictureBox8.Location = new System.Drawing.Point(146, 0);
+            this.pictureBox8.Location = new System.Drawing.Point(142, 8);
             this.pictureBox8.Name = "pictureBox8";
             this.pictureBox8.Size = new System.Drawing.Size(224, 146);
             this.pictureBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -1072,8 +1073,8 @@
             this.Controls.Add(this.Bcaption);
             this.Controls.Add(this.Start);
             this.Controls.Add(this.Community);
-            this.Controls.Add(this.pictureBox3);
-            this.Controls.Add(this.pictureBox2);
+            this.Controls.Add(this.Phone);
+            this.Controls.Add(this.Halved);
             this.Controls.Add(this.ImOut);
             this.Controls.Add(this.panel13);
             this.Controls.Add(this.panel12);
@@ -1140,8 +1141,8 @@
             this.panel17.ResumeLayout(false);
             this.panel17.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.Community)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Phone)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Halved)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
@@ -1197,8 +1198,8 @@
         private System.Windows.Forms.Panel panel12;
         private System.Windows.Forms.Panel panel13;
         private System.Windows.Forms.Button ImOut;
-        private System.Windows.Forms.PictureBox pictureBox2;
-        private System.Windows.Forms.PictureBox pictureBox3;
+        private System.Windows.Forms.PictureBox Halved;
+        private System.Windows.Forms.PictureBox Phone;
         private System.Windows.Forms.PictureBox Community;
         private System.Windows.Forms.PictureBox pictureBox5;
         private System.Windows.Forms.Button Start;

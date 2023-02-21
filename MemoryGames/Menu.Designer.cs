@@ -83,7 +83,7 @@ namespace MemoryGames
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(60, 13);
             this.label3.TabIndex = 4;
-            this.label3.Text = "Version 0.8";
+            this.label3.Text = "Version 0.9";
             // 
             // scoreboardListBox
             // 

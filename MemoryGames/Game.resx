@@ -1042,7 +1042,7 @@
         AAAASUVORK5CYII=
 </value>
   </data>
-  <data name="pictureBox3.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="Phone.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAPYAAADFCAYAAABn/A/LAAAABGdBTUEAALGPC/xhBQAA0NFJREFUeF7s
         XQdgHcXRfqquuKr3Lhe594LpPSEEAiSEkMpPEkJCCM3gIuk1PRXbtPQeCIFQkhB6sXHvXbZs9WJZlix3
@@ -1939,7 +1939,7 @@
         AABJRU5ErkJggg==
 </value>
   </data>
-  <data name="pictureBox2.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="Halved.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAigAAAHECAYAAAATY9HhAAAABGdBTUEAALGPC/xhBQAA/8dJREFUeF7s
         XQd4VFXazqSSQu8hvVe6dEQUC6iIgmJDFBEVESyIFKnJzIQOUqQoKIjYUJEiWCgCIp30XglNXd1d1/13
@@ -3245,4 +3245,7 @@
         rkJggg==
 </value>
   </data>
+  <metadata name="$this.TrayHeight" type="System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>81</value>
+  </metadata>
 </root>

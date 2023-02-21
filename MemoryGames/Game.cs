@@ -235,10 +235,12 @@ namespace MemoryGames
 
             QuestionBox.Visible = true;
 
-            Acaption.Visible = true; Acaption.BackColor = Color.Black;
-            Bcaption.Visible = true; Bcaption.BackColor = Color.Black;
-            Ccaption.Visible = true; Ccaption.BackColor = Color.Black;
-            Dcaption.Visible = true; Dcaption.BackColor = Color.Black;
+            richTextBox1.Visible = false;
+
+            Acaption.Visible = true; Acaption.BackColor = Color.Black; Acaption.ForeColor = Color.White;
+            Bcaption.Visible = true; Bcaption.BackColor = Color.Black; Bcaption.ForeColor = Color.White;
+            Ccaption.Visible = true; Ccaption.BackColor = Color.Black; Ccaption.ForeColor = Color.White;
+            Dcaption.Visible = true; Dcaption.BackColor = Color.Black; Dcaption.ForeColor = Color.White;
             List<int> Numbers = new List<int>();
             mp = 25;
 
@@ -279,6 +281,7 @@ namespace MemoryGames
                 if (choice == list[select].Answer)
                 {
                     Acaption.BackColor = Color.LightGreen;
+                    Acaption.ForeColor = Color.Black;
                     timer1.Stop();
                     soundplayer = new SoundPlayer(@"../../Resources/Kvizjatek_correct-answer.wav");
                     soundplayer.Play();
@@ -308,6 +311,7 @@ namespace MemoryGames
                 if (choice == list[select].Answer)
                 {
                     Bcaption.BackColor = Color.LightGreen;
+                    Bcaption.ForeColor = Color.Black;
                     timer1.Stop();
                     soundplayer = new SoundPlayer(@"../../Resources/Kvizjatek_correct-answer.wav");
                     soundplayer.Play();
@@ -337,6 +341,7 @@ namespace MemoryGames
                 if (choice == list[select].Answer)
                 {
                     Ccaption.BackColor = Color.LightGreen;
+                    Ccaption.ForeColor = Color.Black;
                     timer1.Stop();
                     soundplayer = new SoundPlayer(@"../../Resources/Kvizjatek_correct-answer.wav");
                     soundplayer.Play();
@@ -366,6 +371,7 @@ namespace MemoryGames
                 if (choice == list[select].Answer)
                 {
                     Dcaption.BackColor = Color.LightGreen;
+                    Dcaption.ForeColor = Color.Black;
                     timer1.Stop();
                     soundplayer = new SoundPlayer(@"../../Resources/Kvizjatek_correct-answer.wav");
                     soundplayer.Play();
@@ -458,9 +464,38 @@ namespace MemoryGames
             Ask.Enabled = false;
         }
 
-        private void pictureBox2_Click(object sender, EventArgs e)
+        private void Phone_Click(object sender, EventArgs e)
         {
-          
+            richTextBox1.Visible = true;
+
+            int number = rnd.Next(1, 5);
+            string answer;
+
+            switch (number)
+            {
+                case 1:
+                    answer = "Szerintem az A a helyes válasz.";
+                    break;
+                case 2:
+                    answer = "Biztos vagyok abban hogy a B a helyes válasz.";
+                    break;
+                case 3:
+                    answer = "Az én véleményem szerint a C lehet a helyes válasz.";
+                    break;
+                case 4:
+                    answer = "Én a D-t választanám.";
+                    break;
+                default:
+                    answer = "Nem tudom erre a választ.";
+                    break;
+            }
+
+            Phone.Visible = false;
+            richTextBox1.Text = answer;
+        }
+
+        private void Halved_Click(object sender, EventArgs e)
+        {
 
         }
     }
