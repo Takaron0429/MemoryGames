@@ -87,6 +87,7 @@
             this.name.Size = new System.Drawing.Size(305, 55);
             this.name.TabIndex = 5;
             this.name.Text = "Takács Áron";
+            this.name.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.name.Click += new System.EventHandler(this.name_Click);
             // 
             // panel1

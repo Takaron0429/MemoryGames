@@ -88,11 +88,13 @@ namespace MemoryGames
             // scoreboardListBox
             // 
             this.scoreboardListBox.BackColor = System.Drawing.Color.Black;
-            this.scoreboardListBox.ForeColor = System.Drawing.SystemColors.Control;
+            this.scoreboardListBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.scoreboardListBox.ForeColor = System.Drawing.Color.White;
             this.scoreboardListBox.FormattingEnabled = true;
-            this.scoreboardListBox.Location = new System.Drawing.Point(27, 140);
+            this.scoreboardListBox.ItemHeight = 15;
+            this.scoreboardListBox.Location = new System.Drawing.Point(15, 141);
             this.scoreboardListBox.Name = "scoreboardListBox";
-            this.scoreboardListBox.Size = new System.Drawing.Size(178, 199);
+            this.scoreboardListBox.Size = new System.Drawing.Size(197, 199);
             this.scoreboardListBox.TabIndex = 5;
             this.scoreboardListBox.SelectedIndexChanged += new System.EventHandler(this.scoreboardListBox_SelectedIndexChanged);
             // 

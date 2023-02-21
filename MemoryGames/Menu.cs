@@ -17,10 +17,10 @@ namespace MemoryGames
 
         public Menu()
         {
-            InitializeComponent();
             Read();
+            InitializeComponent();
             OK();
-           
+
         }
         static void Read()
         {
@@ -30,6 +30,7 @@ namespace MemoryGames
             {
                 try
                 {
+                    
                     lines.Add(name.ReadLine().ToString());
                     lines2.Add(money.ReadLine().ToString());
                 }
@@ -39,12 +40,13 @@ namespace MemoryGames
                 }
             }
             money.Close();
+            name.Close();
         }
         private void OK()
         {
-
-            scoreboardListBox.Items.Add("Játékos:" + lines[0].ToString() + "" + lines2[0].ToString());
-
+            
+            scoreboardListBox.Items.Add( lines[0].ToString() + "    :   " + lines2[0].ToString());
+            
         }
 
         private void Form1_Load(object sender, EventArgs e)

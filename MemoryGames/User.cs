@@ -17,6 +17,7 @@ namespace MemoryGames
             StreamWriter file = new StreamWriter("../../Resources/username.txt");
             file.WriteLine(userTextBox.Text);
             file.Close();
+
             Game f2 = new Game();
             this.Hide();
             f2.ShowDialog();

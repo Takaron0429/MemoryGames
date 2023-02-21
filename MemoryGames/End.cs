@@ -39,6 +39,7 @@ namespace MemoryGames
                 }
             }
             money.Close();
+            name.Close();   
         }
         private void OK()
         {

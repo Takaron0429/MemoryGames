@@ -221,6 +221,9 @@ namespace MemoryGames
                 Bcaption.Visible = false;
                 Ccaption.Visible = false;
                 Dcaption.Visible = false;
+                StreamWriter file = new StreamWriter("../../Resources/money.txt");
+                file.WriteLine("40.000.000 Ft");
+                file.Close();
 
                 this.Close();
                 End f6 = new End();
@@ -285,6 +288,8 @@ namespace MemoryGames
                     soundplayer = new SoundPlayer(@"../../Resources/Kvizjatek_correct-answer.wav");
                     soundplayer.Play();
                     tibi.Enabled = true;
+
+
                 }
                 else
                 {
