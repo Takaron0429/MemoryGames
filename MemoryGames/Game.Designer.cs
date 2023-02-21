@@ -211,7 +211,7 @@
             this.tibi.Enabled = false;
             this.tibi.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.tibi.ForeColor = System.Drawing.Color.White;
-            this.tibi.Location = new System.Drawing.Point(38, 149);
+            this.tibi.Location = new System.Drawing.Point(22, 144);
             this.tibi.Name = "tibi";
             this.tibi.Size = new System.Drawing.Size(100, 42);
             this.tibi.TabIndex = 19;
@@ -700,7 +700,7 @@
             this.richTextBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.richTextBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.richTextBox1.ForeColor = System.Drawing.SystemColors.Control;
-            this.richTextBox1.Location = new System.Drawing.Point(159, 12);
+            this.richTextBox1.Location = new System.Drawing.Point(156, 15);
             this.richTextBox1.Name = "richTextBox1";
             this.richTextBox1.Size = new System.Drawing.Size(198, 123);
             this.richTextBox1.TabIndex = 65;
@@ -826,7 +826,7 @@
             this.Win.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.Win.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.Win.ForeColor = System.Drawing.SystemColors.Control;
-            this.Win.Location = new System.Drawing.Point(159, 113);
+            this.Win.Location = new System.Drawing.Point(156, 116);
             this.Win.Name = "Win";
             this.Win.Size = new System.Drawing.Size(197, 15);
             this.Win.TabIndex = 72;
@@ -835,7 +835,7 @@
             // pictureBox8
             // 
             this.pictureBox8.Image = global::MemoryGames.Properties.Resources.tablet_frame;
-            this.pictureBox8.Location = new System.Drawing.Point(146, 0);
+            this.pictureBox8.Location = new System.Drawing.Point(143, 3);
             this.pictureBox8.Name = "pictureBox8";
             this.pictureBox8.Size = new System.Drawing.Size(224, 146);
             this.pictureBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -876,7 +876,7 @@
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Location = new System.Drawing.Point(18, 12);
+            this.pictureBox1.Location = new System.Drawing.Point(12, 12);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(120, 120);
             this.pictureBox1.TabIndex = 20;
