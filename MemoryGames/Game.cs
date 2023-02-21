@@ -220,6 +220,11 @@ namespace MemoryGames
                 Bcaption.Visible = false;
                 Ccaption.Visible = false;
                 Dcaption.Visible = false;
+
+                End f6 = new End();
+                this.Hide();
+                f6.ShowDialog();
+                this.Close();
             }
         }
 
@@ -455,10 +460,8 @@ namespace MemoryGames
 
         private void pictureBox2_Click(object sender, EventArgs e)
         {
-            End f6 = new End();
-            this.Hide();
-            f6.ShowDialog();
-            this.Close();
+          
+
         }
     }
 }
