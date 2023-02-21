@@ -42,7 +42,6 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.label12 = new System.Windows.Forms.Label();
             this.label14 = new System.Windows.Forms.Label();
-            this.listBox1 = new System.Windows.Forms.ListBox();
             this.label7 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
@@ -109,11 +108,14 @@
             this.pictureBox8 = new System.Windows.Forms.PictureBox();
             this.pictureBox6 = new System.Windows.Forms.PictureBox();
             this.AskBack = new System.Windows.Forms.PictureBox();
+            this.panel14 = new System.Windows.Forms.Panel();
             this.panel1.SuspendLayout();
             this.panel3.SuspendLayout();
             this.panel4.SuspendLayout();
             this.panel5.SuspendLayout();
             this.panel6.SuspendLayout();
+            this.panel7.SuspendLayout();
+            this.panel8.SuspendLayout();
             this.panel9.SuspendLayout();
             this.panel10.SuspendLayout();
             this.panel11.SuspendLayout();
@@ -139,7 +141,7 @@
             this.label1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(896, 578);
+            this.label1.Location = new System.Drawing.Point(10, 1);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(15, 16);
             this.label1.TabIndex = 7;
@@ -151,7 +153,7 @@
             this.label2.BackColor = System.Drawing.Color.MediumBlue;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(14, 0);
+            this.label2.Location = new System.Drawing.Point(10, 0);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(15, 16);
             this.label2.TabIndex = 8;
@@ -163,7 +165,7 @@
             this.label3.BackColor = System.Drawing.Color.MediumBlue;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.label3.ForeColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(896, 524);
+            this.label3.Location = new System.Drawing.Point(10, 0);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(15, 16);
             this.label3.TabIndex = 9;
@@ -175,7 +177,7 @@
             this.label4.BackColor = System.Drawing.Color.MediumBlue;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.label4.ForeColor = System.Drawing.Color.White;
-            this.label4.Location = new System.Drawing.Point(896, 493);
+            this.label4.Location = new System.Drawing.Point(10, 0);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(15, 16);
             this.label4.TabIndex = 10;
@@ -187,7 +189,7 @@
             this.label5.BackColor = System.Drawing.SystemColors.ActiveBorder;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.label5.ForeColor = System.Drawing.Color.White;
-            this.label5.Location = new System.Drawing.Point(896, 465);
+            this.label5.Location = new System.Drawing.Point(10, -1);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(15, 16);
             this.label5.TabIndex = 11;
@@ -199,7 +201,7 @@
             this.label6.BackColor = System.Drawing.Color.MediumBlue;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.label6.ForeColor = System.Drawing.Color.White;
-            this.label6.Location = new System.Drawing.Point(896, 433);
+            this.label6.Location = new System.Drawing.Point(10, 0);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(15, 16);
             this.label6.TabIndex = 12;
@@ -240,6 +242,7 @@
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.panel1.Controls.Add(this.label12);
+            this.panel1.Controls.Add(this.label1);
             this.panel1.ForeColor = System.Drawing.Color.White;
             this.panel1.Location = new System.Drawing.Point(882, 577);
             this.panel1.Name = "panel1";
@@ -264,21 +267,11 @@
             this.label14.BackColor = System.Drawing.Color.MediumBlue;
             this.label14.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.label14.ForeColor = System.Drawing.Color.White;
-            this.label14.Location = new System.Drawing.Point(896, 404);
+            this.label14.Location = new System.Drawing.Point(10, 0);
             this.label14.Name = "label14";
             this.label14.Size = new System.Drawing.Size(15, 16);
             this.label14.TabIndex = 23;
             this.label14.Text = "7";
-            // 
-            // listBox1
-            // 
-            this.listBox1.BackColor = System.Drawing.Color.MediumBlue;
-            this.listBox1.ForeColor = System.Drawing.SystemColors.Info;
-            this.listBox1.FormattingEnabled = true;
-            this.listBox1.Location = new System.Drawing.Point(853, 134);
-            this.listBox1.Name = "listBox1";
-            this.listBox1.Size = new System.Drawing.Size(259, 472);
-            this.listBox1.TabIndex = 0;
             // 
             // label7
             // 
@@ -286,7 +279,7 @@
             this.label7.BackColor = System.Drawing.Color.MediumBlue;
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.label7.ForeColor = System.Drawing.Color.White;
-            this.label7.Location = new System.Drawing.Point(896, 369);
+            this.label7.Location = new System.Drawing.Point(10, 0);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(15, 16);
             this.label7.TabIndex = 24;
@@ -298,7 +291,7 @@
             this.label8.BackColor = System.Drawing.Color.MediumBlue;
             this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.label8.ForeColor = System.Drawing.Color.White;
-            this.label8.Location = new System.Drawing.Point(896, 337);
+            this.label8.Location = new System.Drawing.Point(10, 0);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(15, 16);
             this.label8.TabIndex = 25;
@@ -515,6 +508,7 @@
             // 
             this.panel6.BackColor = System.Drawing.Color.MediumBlue;
             this.panel6.Controls.Add(this.label22);
+            this.panel6.Controls.Add(this.label8);
             this.panel6.ForeColor = System.Drawing.Color.White;
             this.panel6.Location = new System.Drawing.Point(882, 337);
             this.panel6.Name = "panel6";
@@ -524,6 +518,7 @@
             // panel7
             // 
             this.panel7.BackColor = System.Drawing.Color.MediumBlue;
+            this.panel7.Controls.Add(this.label7);
             this.panel7.ForeColor = System.Drawing.Color.White;
             this.panel7.Location = new System.Drawing.Point(882, 369);
             this.panel7.Name = "panel7";
@@ -533,6 +528,7 @@
             // panel8
             // 
             this.panel8.BackColor = System.Drawing.Color.MediumBlue;
+            this.panel8.Controls.Add(this.label14);
             this.panel8.ForeColor = System.Drawing.Color.White;
             this.panel8.Location = new System.Drawing.Point(882, 404);
             this.panel8.Name = "panel8";
@@ -543,6 +539,7 @@
             // 
             this.panel9.BackColor = System.Drawing.Color.MediumBlue;
             this.panel9.Controls.Add(this.label19);
+            this.panel9.Controls.Add(this.label6);
             this.panel9.ForeColor = System.Drawing.Color.White;
             this.panel9.Location = new System.Drawing.Point(882, 433);
             this.panel9.Name = "panel9";
@@ -553,6 +550,7 @@
             // 
             this.panel10.BackColor = System.Drawing.SystemColors.ActiveBorder;
             this.panel10.Controls.Add(this.label18);
+            this.panel10.Controls.Add(this.label5);
             this.panel10.ForeColor = System.Drawing.Color.White;
             this.panel10.Location = new System.Drawing.Point(882, 465);
             this.panel10.Name = "panel10";
@@ -563,6 +561,7 @@
             // 
             this.panel11.BackColor = System.Drawing.Color.MediumBlue;
             this.panel11.Controls.Add(this.label17);
+            this.panel11.Controls.Add(this.label4);
             this.panel11.ForeColor = System.Drawing.Color.White;
             this.panel11.Location = new System.Drawing.Point(882, 493);
             this.panel11.Name = "panel11";
@@ -573,8 +572,9 @@
             // 
             this.panel12.BackColor = System.Drawing.Color.MediumBlue;
             this.panel12.Controls.Add(this.label16);
+            this.panel12.Controls.Add(this.label3);
             this.panel12.ForeColor = System.Drawing.Color.White;
-            this.panel12.Location = new System.Drawing.Point(882, 524);
+            this.panel12.Location = new System.Drawing.Point(882, 523);
             this.panel12.Name = "panel12";
             this.panel12.Size = new System.Drawing.Size(213, 16);
             this.panel12.TabIndex = 51;
@@ -585,7 +585,7 @@
             this.panel13.Controls.Add(this.label2);
             this.panel13.Controls.Add(this.label15);
             this.panel13.ForeColor = System.Drawing.Color.White;
-            this.panel13.Location = new System.Drawing.Point(882, 552);
+            this.panel13.Location = new System.Drawing.Point(882, 551);
             this.panel13.Name = "panel13";
             this.panel13.Size = new System.Drawing.Size(213, 16);
             this.panel13.TabIndex = 52;
@@ -606,6 +606,7 @@
             // Acaption
             // 
             this.Acaption.BackColor = System.Drawing.Color.Black;
+            this.Acaption.Enabled = false;
             this.Acaption.FlatAppearance.BorderSize = 0;
             this.Acaption.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Acaption.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
@@ -620,7 +621,7 @@
             // Start
             // 
             this.Start.Font = new System.Drawing.Font("Showcard Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Start.Location = new System.Drawing.Point(427, 556);
+            this.Start.Location = new System.Drawing.Point(432, 561);
             this.Start.Name = "Start";
             this.Start.Size = new System.Drawing.Size(126, 66);
             this.Start.TabIndex = 57;
@@ -631,6 +632,7 @@
             // Bcaption
             // 
             this.Bcaption.BackColor = System.Drawing.Color.Black;
+            this.Bcaption.Enabled = false;
             this.Bcaption.FlatAppearance.BorderSize = 0;
             this.Bcaption.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Bcaption.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
@@ -645,6 +647,7 @@
             // Dcaption
             // 
             this.Dcaption.BackColor = System.Drawing.Color.Black;
+            this.Dcaption.Enabled = false;
             this.Dcaption.FlatAppearance.BorderSize = 0;
             this.Dcaption.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Dcaption.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
@@ -659,6 +662,7 @@
             // Ccaption
             // 
             this.Ccaption.BackColor = System.Drawing.Color.Black;
+            this.Ccaption.Enabled = false;
             this.Ccaption.FlatAppearance.BorderSize = 0;
             this.Ccaption.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Ccaption.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
@@ -711,10 +715,12 @@
             // 
             this.QuestionBox.BackColor = System.Drawing.Color.Black;
             this.QuestionBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.QuestionBox.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.QuestionBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.QuestionBox.ForeColor = System.Drawing.SystemColors.Info;
             this.QuestionBox.Location = new System.Drawing.Point(298, 359);
             this.QuestionBox.Name = "QuestionBox";
+            this.QuestionBox.ReadOnly = true;
             this.QuestionBox.Size = new System.Drawing.Size(424, 61);
             this.QuestionBox.TabIndex = 2;
             this.QuestionBox.Text = "";
@@ -858,7 +864,6 @@
             this.Askb.TabIndex = 77;
             this.Askb.Text = "B:";
             this.Askb.Visible = false;
-            this.Askb.Click += new System.EventHandler(this.label32_Click);
             // 
             // Askc
             // 
@@ -953,7 +958,6 @@
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox3.TabIndex = 54;
             this.pictureBox3.TabStop = false;
-            this.pictureBox3.Click += new System.EventHandler(this.pictureBox3_Click);
             // 
             // pictureBox2
             // 
@@ -1028,6 +1032,15 @@
             this.AskBack.TabStop = false;
             this.AskBack.Visible = false;
             // 
+            // panel14
+            // 
+            this.panel14.BackColor = System.Drawing.Color.MediumBlue;
+            this.panel14.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.panel14.Location = new System.Drawing.Point(864, 136);
+            this.panel14.Name = "panel14";
+            this.panel14.Size = new System.Drawing.Size(249, 472);
+            this.panel14.TabIndex = 85;
+            // 
             // Game
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1063,21 +1076,14 @@
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.ImOut);
             this.Controls.Add(this.panel13);
-            this.Controls.Add(this.label3);
             this.Controls.Add(this.panel12);
-            this.Controls.Add(this.label4);
             this.Controls.Add(this.panel11);
-            this.Controls.Add(this.label5);
             this.Controls.Add(this.panel10);
-            this.Controls.Add(this.label6);
             this.Controls.Add(this.panel9);
             this.Controls.Add(this.label20);
-            this.Controls.Add(this.label14);
             this.Controls.Add(this.panel8);
             this.Controls.Add(this.label21);
-            this.Controls.Add(this.label7);
             this.Controls.Add(this.panel7);
-            this.Controls.Add(this.label8);
             this.Controls.Add(this.panel6);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.panel5);
@@ -1085,20 +1091,19 @@
             this.Controls.Add(this.panel4);
             this.Controls.Add(this.label11);
             this.Controls.Add(this.panel3);
-            this.Controls.Add(this.label1);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.Time);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.tibi);
             this.Controls.Add(this.Acaption);
             this.Controls.Add(this.QuestionBox);
-            this.Controls.Add(this.listBox1);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.pictureBox5);
             this.Controls.Add(this.pictureBox7);
             this.Controls.Add(this.pictureBox8);
             this.Controls.Add(this.pictureBox6);
             this.Controls.Add(this.AskBack);
+            this.Controls.Add(this.panel14);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.MaximizeBox = false;
             this.Name = "Game";
@@ -1114,6 +1119,10 @@
             this.panel5.PerformLayout();
             this.panel6.ResumeLayout(false);
             this.panel6.PerformLayout();
+            this.panel7.ResumeLayout(false);
+            this.panel7.PerformLayout();
+            this.panel8.ResumeLayout(false);
+            this.panel8.PerformLayout();
             this.panel9.ResumeLayout(false);
             this.panel9.PerformLayout();
             this.panel10.ResumeLayout(false);
@@ -1158,7 +1167,6 @@
         private System.Windows.Forms.Label Time;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label label14;
-        private System.Windows.Forms.ListBox listBox1;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label9;
@@ -1224,5 +1232,6 @@
         private System.Windows.Forms.ProgressBar progressBar2;
         private System.Windows.Forms.ProgressBar progressBar3;
         private System.Windows.Forms.ProgressBar progressBar4;
+        private System.Windows.Forms.Panel panel14;
     }
 }

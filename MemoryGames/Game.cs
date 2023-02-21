@@ -62,7 +62,6 @@ namespace MemoryGames
             Dcaption.Enabled = true;
             QuestionBox.Enabled = true;
             tibi.Enabled = true;
-
         }
 
         private void timer1_Tick(object sender, EventArgs e)
@@ -106,8 +105,6 @@ namespace MemoryGames
                 panel11.BackColor = Color.Orange;
                 label4.BackColor = Color.Orange;
                 label17.BackColor = Color.Orange;
-
-
             }
             else if (Round == 5)
             {
@@ -116,6 +113,7 @@ namespace MemoryGames
                 label18.BackColor = Color.Orange;
 
                 richTextBox1.Visible = true;
+                pictureBox8.Visible = true;
                 richTextBox1.Text = "Gratulálok! Kilépőponthoz erkeztünk, ha kilépni kivánsz és el vinni a 100.000 Ft nyomd meg a  a bal alsó sarokban a kilép gombot. Ha viszont folytatni akarod akkor nyomd meg a folytatást!";
                 ImOut.Visible = true;
                 Cont.Visible = true;
@@ -165,6 +163,7 @@ namespace MemoryGames
 
 
                 richTextBox1.Visible = true;
+                pictureBox8.Visible = true;
                 richTextBox1.Text = "Gratulálok! Folytatod vagy elviszed a 1.500.000 Ft?";
                 ImOut.Visible = true;
                 Cont.Visible = true;
@@ -224,7 +223,6 @@ namespace MemoryGames
             }
         }
 
-
         //Essence
         private void tibi_Click(object sender, EventArgs e)
         {
@@ -280,7 +278,6 @@ namespace MemoryGames
                     soundplayer = new SoundPlayer(@"../../Resources/Kvizjatek_correct-answer.wav");
                     soundplayer.Play();
                     tibi.Enabled = true;
-                  
                 }
                 else
                 {
@@ -310,7 +307,6 @@ namespace MemoryGames
                     soundplayer = new SoundPlayer(@"../../Resources/Kvizjatek_correct-answer.wav");
                     soundplayer.Play();
                     tibi.Enabled = true;
-                    
                 }
                 else
                 {
@@ -388,8 +384,8 @@ namespace MemoryGames
         private void Cont_Click(object sender, EventArgs e)
         {
             tibi.Enabled = true;
-            pictureBox6.Visible = false;
-
+            pictureBox8.Visible = false;
+            richTextBox1.Visible = false;
         }
 
         private void ImOut_Click(object sender, EventArgs e)
@@ -397,29 +393,18 @@ namespace MemoryGames
             Impressum form = new Impressum();
             form.Show();
             Visible = false;
-
-        }
-
-        private void Fekete_Paint(object sender, PaintEventArgs e)
-        {
-            //BackColor = Color.Black;
-        }
-
-        private void label32_Click(object sender, EventArgs e)
-        {
-
         }
 
         private void pictureBox4_Click(object sender, EventArgs e)
         {
             mp += 10;
             Ask.Visible = true;
-            AskBack.Visible = true; 
+            AskBack.Visible = true;
             progressBar1.Visible = true;
             progressBar2.Visible = true;
             progressBar3.Visible = true;
             progressBar4.Visible = true;
-            progressBar1.Visible=true;
+            progressBar1.Visible = true;
             Aska.Visible = true;
             Askb.Visible = true;
             Askc.Visible = true;
@@ -427,9 +412,8 @@ namespace MemoryGames
             AskBack.Visible = true;
 
             Community.Visible = false;
-
-           
         }
+
         private void Community_false()
         {
             Ask.Visible = false;
@@ -444,9 +428,9 @@ namespace MemoryGames
             Askc.Visible = false;
             Askd.Visible = false;
         }
+
         private void Ask_Click(object sender, EventArgs e)
         {
-
             int Bar1 = rnd.Next(0, 100);
             int Bar2 = rnd.Next(0, 100);
             int Bar3 = rnd.Next(0, 100);
@@ -458,8 +442,9 @@ namespace MemoryGames
                 Bar2 = rnd.Next(0, 100);
                 Bar3 = rnd.Next(0, 100);
                 Bar4 = rnd.Next(0, 100);
-                
+
             }
+
             progressBar1.Value = Bar1;
             progressBar2.Value = Bar2;
             progressBar3.Value = Bar3;
@@ -468,18 +453,12 @@ namespace MemoryGames
             Ask.Enabled = false;
         }
 
-        private void pictureBox3_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void pictureBox2_Click(object sender, EventArgs e)
         {
-            End f6= new End();
+            End f6 = new End();
             this.Hide();
             f6.ShowDialog();
             this.Close();
-
         }
     }
 }
