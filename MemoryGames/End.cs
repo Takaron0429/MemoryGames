@@ -54,6 +54,11 @@ namespace MemoryGames
                 Money.Text = str;
 
             }
+            if (Money.Text=="0 Ft")
+            {
+                Money.ForeColor= Color.Red; 
+                
+            }
         }
 
         private void button1_Click(object sender, EventArgs e)

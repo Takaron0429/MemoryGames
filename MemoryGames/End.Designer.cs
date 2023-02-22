@@ -53,7 +53,7 @@
             this.Money.Size = new System.Drawing.Size(334, 55);
             this.Money.TabIndex = 3;
             this.Money.Text = "40.000.000 Ft";
-            this.Money.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.Money.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.Money.Click += new System.EventHandler(this.Money_Click);
             // 
             // pictureBox1

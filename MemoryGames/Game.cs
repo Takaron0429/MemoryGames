@@ -77,6 +77,17 @@ namespace MemoryGames
             {
                 timer1.Stop();
             }
+            if (mp == 0)
+            {
+                StreamWriter file = new StreamWriter("../../Resources/money.txt");
+                file.WriteLine("0 Ft");
+                file.Close();
+
+                End f6 = new End();
+                this.Hide();
+                f6.ShowDialog();
+                this.Close();
+            }
 
         }
 
@@ -277,6 +288,8 @@ namespace MemoryGames
                 Halved.Enabled = true;
                 Phone.Enabled = true;
                 Community.Enabled = true;
+
+           
             }
 
         }
@@ -310,6 +323,14 @@ namespace MemoryGames
                 {
                     Community_false();
                 }
+                StreamWriter file = new StreamWriter("../../Resources/money.txt");
+                file.WriteLine("0 Ft");
+                file.Close();
+
+                End f6 = new End();
+                this.Hide();
+                f6.ShowDialog();
+                this.Close();
             }
         }
 
@@ -340,6 +361,14 @@ namespace MemoryGames
                 {
                     Community_false();
                 }
+                StreamWriter file = new StreamWriter("../../Resources/money.txt");
+                file.WriteLine("0 Ft");
+                file.Close();
+
+                End f6 = new End();
+                this.Hide();
+                f6.ShowDialog();
+                this.Close();
             }
         }
 
@@ -370,6 +399,14 @@ namespace MemoryGames
                 {
                     Community_false();
                 }
+                StreamWriter file = new StreamWriter("../../Resources/money.txt");
+                file.WriteLine("0 Ft");
+                file.Close();
+
+                End f6 = new End();
+                this.Hide();
+                f6.ShowDialog();
+                this.Close();
             }
         }
 
@@ -400,6 +437,14 @@ namespace MemoryGames
                 {
                     Community_false();
                 }
+                StreamWriter file = new StreamWriter("../../Resources/money.txt");
+                file.WriteLine("0 Ft");
+                file.Close();
+
+                End f6 = new End();
+                this.Hide();
+                f6.ShowDialog();
+                this.Close();
             }
         }
 
@@ -491,6 +536,7 @@ namespace MemoryGames
 
         private void Phone_Click(object sender, EventArgs e)
         {
+            mp += 10;
             richTextBox1.Visible = true;
 
             int number = rnd.Next(1, 5);
