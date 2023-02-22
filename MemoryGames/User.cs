@@ -6,12 +6,12 @@ namespace MemoryGames
 {
     public partial class User : Form
     {
-        
+
         public User()
         {
             InitializeComponent();
         }
-       
+
         private void playButton_Click(object sender, EventArgs e)
         {
             StreamWriter file = new StreamWriter("../../Resources/username.txt");
@@ -23,12 +23,19 @@ namespace MemoryGames
             f2.ShowDialog();
             this.Close();
 
-            
+
         }
-       
+
         private void userTextBox_TextChanged(object sender, EventArgs e)
         {
-            
+            if (userTextBox.Text == "")
+            {
+                playButton.Enabled = false;
+            }
+            else
+            {
+                playButton.Enabled = true;
+            }
         }
     }
 }

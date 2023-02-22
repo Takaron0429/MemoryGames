@@ -99,6 +99,7 @@
             this.progressBar2 = new System.Windows.Forms.ProgressBar();
             this.progressBar3 = new System.Windows.Forms.ProgressBar();
             this.progressBar4 = new System.Windows.Forms.ProgressBar();
+            this.panel14 = new System.Windows.Forms.Panel();
             this.Community = new System.Windows.Forms.PictureBox();
             this.Phone = new System.Windows.Forms.PictureBox();
             this.Halved = new System.Windows.Forms.PictureBox();
@@ -108,7 +109,6 @@
             this.pictureBox8 = new System.Windows.Forms.PictureBox();
             this.pictureBox6 = new System.Windows.Forms.PictureBox();
             this.AskBack = new System.Windows.Forms.PictureBox();
-            this.panel14 = new System.Windows.Forms.Panel();
             this.panel1.SuspendLayout();
             this.panel3.SuspendLayout();
             this.panel4.SuspendLayout();
@@ -684,6 +684,7 @@
             this.developerLabel.Size = new System.Drawing.Size(271, 31);
             this.developerLabel.TabIndex = 62;
             this.developerLabel.Text = "DEVELOPER LABEL";
+            this.developerLabel.Visible = false;
             // 
             // Cont
             // 
@@ -938,6 +939,15 @@
             this.progressBar4.TabIndex = 84;
             this.progressBar4.Visible = false;
             // 
+            // panel14
+            // 
+            this.panel14.BackColor = System.Drawing.Color.MediumBlue;
+            this.panel14.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.panel14.Location = new System.Drawing.Point(864, 136);
+            this.panel14.Name = "panel14";
+            this.panel14.Size = new System.Drawing.Size(249, 472);
+            this.panel14.TabIndex = 85;
+            // 
             // Community
             // 
             this.Community.BackColor = System.Drawing.Color.Transparent;
@@ -1036,15 +1046,6 @@
             this.AskBack.TabIndex = 75;
             this.AskBack.TabStop = false;
             this.AskBack.Visible = false;
-            // 
-            // panel14
-            // 
-            this.panel14.BackColor = System.Drawing.Color.MediumBlue;
-            this.panel14.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.panel14.Location = new System.Drawing.Point(864, 136);
-            this.panel14.Name = "panel14";
-            this.panel14.Size = new System.Drawing.Size(249, 472);
-            this.panel14.TabIndex = 85;
             // 
             // Game
             // 

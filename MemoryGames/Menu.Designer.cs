@@ -37,7 +37,6 @@ namespace MemoryGames
             this.scoreboardLabel = new System.Windows.Forms.Label();
             this.impressumLabel = new System.Windows.Forms.Label();
             this.helpButton = new System.Windows.Forms.Button();
-            this.updateButton = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // startButton
@@ -73,7 +72,7 @@ namespace MemoryGames
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(60, 13);
             this.label3.TabIndex = 4;
-            this.label3.Text = "Version 0.9";
+            this.label3.Text = "Version 1.0";
             // 
             // scoreboardListBox
             // 
@@ -86,7 +85,6 @@ namespace MemoryGames
             this.scoreboardListBox.Name = "scoreboardListBox";
             this.scoreboardListBox.Size = new System.Drawing.Size(197, 199);
             this.scoreboardListBox.TabIndex = 5;
-            this.scoreboardListBox.SelectedIndexChanged += new System.EventHandler(this.scoreboardListBox_SelectedIndexChanged);
             // 
             // scoreboardLabel
             // 
@@ -122,17 +120,6 @@ namespace MemoryGames
             this.helpButton.UseVisualStyleBackColor = true;
             this.helpButton.Click += new System.EventHandler(this.helpButton_Click);
             // 
-            // updateButton
-            // 
-            this.updateButton.Font = new System.Drawing.Font("Showcard Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.updateButton.Location = new System.Drawing.Point(60, 346);
-            this.updateButton.Name = "updateButton";
-            this.updateButton.Size = new System.Drawing.Size(90, 30);
-            this.updateButton.TabIndex = 9;
-            this.updateButton.Text = "FRISSÍTÉS";
-            this.updateButton.UseVisualStyleBackColor = true;
-            this.updateButton.Click += new System.EventHandler(this.updateButton_Click);
-            // 
             // Menu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -141,7 +128,6 @@ namespace MemoryGames
             this.BackgroundImage = global::MemoryGames.Properties.Resources.legyen_on_is_milliomos;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.updateButton);
             this.Controls.Add(this.helpButton);
             this.Controls.Add(this.impressumLabel);
             this.Controls.Add(this.scoreboardLabel);
@@ -168,7 +154,6 @@ namespace MemoryGames
         private System.Windows.Forms.Label scoreboardLabel;
         private System.Windows.Forms.Label impressumLabel;
         private System.Windows.Forms.Button helpButton;
-        private System.Windows.Forms.Button updateButton;
     }
 }
 

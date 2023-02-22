@@ -84,16 +84,5 @@ namespace MemoryGames
             Help f5 = new Help();
             f5.ShowDialog();
         }
-
-        private void scoreboardListBox_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void updateButton_Click(object sender, EventArgs e)
-        {
-            Read();
-            OK();
-        }
     }
 }

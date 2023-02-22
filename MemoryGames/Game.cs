@@ -134,7 +134,7 @@ namespace MemoryGames
                 Dcaption.Visible = false;
 
                 timer1.Stop();
-               
+
             }
             else if (Round == 6)
             {
@@ -230,14 +230,14 @@ namespace MemoryGames
                 Dcaption.Visible = false;
                 StreamWriter file = new StreamWriter("../../Resources/money.txt");
                 file.WriteLine("40.000.000 Ft");
-                
+
                 file.Close();
 
                 this.Close();
                 End f6 = new End();
                 this.Hide();
                 f6.ShowDialog();
-               
+
             }
         }
 
@@ -284,8 +284,6 @@ namespace MemoryGames
                 Halved.Enabled = true;
                 Phone.Enabled = true;
                 Community.Enabled = true;
-
-           
             }
 
         }
@@ -320,19 +318,19 @@ namespace MemoryGames
                     Bcaption.Enabled = false;
                     Ccaption.Enabled = false;
                     Dcaption.Enabled = false;
+                    StreamWriter file = new StreamWriter("../../Resources/money.txt");
+                    file.WriteLine("0 Ft");
+                    file.Close();
+
+                    End f6 = new End();
+                    this.Hide();
+                    f6.ShowDialog();
+                    this.Close();
                 }
                 if (Community.Visible == false)
                 {
                     Community_false();
                 }
-                StreamWriter file = new StreamWriter("../../Resources/money.txt");
-                file.WriteLine("0 Ft");
-                file.Close();
-
-                End f6 = new End();
-                this.Hide();
-                f6.ShowDialog();
-                this.Close();
             }
         }
 
@@ -366,19 +364,19 @@ namespace MemoryGames
                     Bcaption.Enabled = false;
                     Ccaption.Enabled = false;
                     Dcaption.Enabled = false;
+                    StreamWriter file = new StreamWriter("../../Resources/money.txt");
+                    file.WriteLine("0 Ft");
+                    file.Close();
+
+                    End f6 = new End();
+                    this.Hide();
+                    f6.ShowDialog();
+                    this.Close();
                 }
                 if (Community.Visible == false)
                 {
                     Community_false();
                 }
-                StreamWriter file = new StreamWriter("../../Resources/money.txt");
-                file.WriteLine("0 Ft");
-                file.Close();
-
-                End f6 = new End();
-                this.Hide();
-                f6.ShowDialog();
-                this.Close();
             }
         }
 
@@ -412,19 +410,19 @@ namespace MemoryGames
                     Bcaption.Enabled = false;
                     Ccaption.Enabled = false;
                     Dcaption.Enabled = false;
+                    StreamWriter file = new StreamWriter("../../Resources/money.txt");
+                    file.WriteLine("0 Ft");
+                    file.Close();
+
+                    End f6 = new End();
+                    this.Hide();
+                    f6.ShowDialog();
+                    this.Close();
                 }
                 if (Community.Visible == false)
                 {
                     Community_false();
                 }
-                StreamWriter file = new StreamWriter("../../Resources/money.txt");
-                file.WriteLine("0 Ft");
-                file.Close();
-
-                End f6 = new End();
-                this.Hide();
-                f6.ShowDialog();
-                this.Close();
             }
         }
 
@@ -458,19 +456,20 @@ namespace MemoryGames
                     Bcaption.Enabled = false;
                     Ccaption.Enabled = false;
                     Dcaption.Enabled = false;
+                    StreamWriter file = new StreamWriter("../../Resources/money.txt");
+                    file.WriteLine("0 Ft");
+                    file.Close();
+
+                    End f6 = new End();
+                    this.Hide();
+                    f6.ShowDialog();
+                    this.Close();
                 }
                 if (Community.Visible == false)
                 {
                     Community_false();
                 }
-                StreamWriter file = new StreamWriter("../../Resources/money.txt");
-                file.WriteLine("0 Ft");
-                file.Close();
 
-                End f6 = new End();
-                this.Hide();
-                f6.ShowDialog();
-                this.Close();
             }
         }
 
@@ -483,13 +482,13 @@ namespace MemoryGames
 
         private void ImOut_Click(object sender, EventArgs e)
         {
-          if(Round == 5)
+            if (Round == 5)
             {
                 StreamWriter file = new StreamWriter("../../Resources/money.txt");
                 file.WriteLine("100.000 Ft");
                 file.Close();
             }
-           else if (Round == 10)
+            else if (Round == 10)
             {
                 StreamWriter file = new StreamWriter("../../Resources/money.txt");
                 file.WriteLine("1.500.000 Ft");
@@ -557,7 +556,7 @@ namespace MemoryGames
             progressBar3.Value = Bar3;
             progressBar4.Value = Bar4;
 
-            Ask.Enabled = false;
+            Ask.Visible = false;
         }
 
         private void Phone_Click(object sender, EventArgs e)
@@ -593,7 +592,23 @@ namespace MemoryGames
 
         private void Halved_Click(object sender, EventArgs e)
         {
+            mp += 10;
 
+            for (int i = 0; i <= 15; i++)
+            {
+                if ('A' != list[select].Answer && 'B' != list[select].Answer)
+                {
+                    Acaption.Enabled = false;
+                    Bcaption.Enabled = false;
+                }
+                else if ('C' != list[select].Answer && 'D' != list[select].Answer)
+                {
+                    Ccaption.Enabled = false;
+                    Dcaption.Enabled = false;
+                }
+            }
+
+            Halved.Visible = false;
         }
     }
 }

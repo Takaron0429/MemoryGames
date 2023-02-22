@@ -1,12 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
 using System.Drawing;
 using System.IO;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace MemoryGames
@@ -19,14 +14,14 @@ namespace MemoryGames
             Read();
             OK();
         }
-      
-       static List<string> lines = new List<string>();
+
+        static List<string> lines = new List<string>();
         static List<string> lines2 = new List<string>();
         static void Read()
         {
             StreamReader name = new StreamReader("../../Resources/username.txt");
             StreamReader money = new StreamReader("../../Resources/money.txt");
-            while (!name.EndOfStream && !money.EndOfStream )
+            while (!name.EndOfStream && !money.EndOfStream)
             {
                 try
                 {
@@ -39,25 +34,25 @@ namespace MemoryGames
                 }
             }
             money.Close();
-            name.Close();   
+            name.Close();
         }
         private void OK()
         {
-           
+
             foreach (var str in lines)
             {
                 name.Text = str;
-                
+
             }
             foreach (var str in lines2)
             {
                 Money.Text = str;
 
             }
-            if (Money.Text=="0 Ft")
+            if (Money.Text == "0 Ft")
             {
-                Money.ForeColor= Color.Red; 
-                
+                Money.ForeColor = Color.Red;
+
             }
         }
 
@@ -71,7 +66,7 @@ namespace MemoryGames
 
         private void name_Click(object sender, EventArgs e)
         {
-           
+
         }
     }
 }

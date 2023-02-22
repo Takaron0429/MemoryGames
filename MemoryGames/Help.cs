@@ -14,15 +14,5 @@ namespace MemoryGames
         {
             this.Close();
         }
-
-        private void backwardButton_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void forwardButton_Click(object sender, EventArgs e)
-        {
-
-        }
     }
 }

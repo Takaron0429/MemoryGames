@@ -29,8 +29,6 @@
         private void InitializeComponent()
         {
             this.closeButton = new System.Windows.Forms.Button();
-            this.backwardButton = new System.Windows.Forms.Button();
-            this.forwardButton = new System.Windows.Forms.Button();
             this.pictureBox = new System.Windows.Forms.PictureBox();
             this.helpLabel1 = new System.Windows.Forms.Label();
             this.helpLabel2 = new System.Windows.Forms.Label();
@@ -41,7 +39,7 @@
             // closeButton
             // 
             this.closeButton.Font = new System.Drawing.Font("Showcard Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.closeButton.Location = new System.Drawing.Point(341, 386);
+            this.closeButton.Location = new System.Drawing.Point(341, 389);
             this.closeButton.Name = "closeButton";
             this.closeButton.Size = new System.Drawing.Size(118, 55);
             this.closeButton.TabIndex = 0;
@@ -49,32 +47,11 @@
             this.closeButton.UseVisualStyleBackColor = true;
             this.closeButton.Click += new System.EventHandler(this.closeButton_Click);
             // 
-            // backwardButton
-            // 
-            this.backwardButton.Font = new System.Drawing.Font("Showcard Gothic", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.backwardButton.Location = new System.Drawing.Point(277, 386);
-            this.backwardButton.Name = "backwardButton";
-            this.backwardButton.Size = new System.Drawing.Size(58, 55);
-            this.backwardButton.TabIndex = 2;
-            this.backwardButton.Text = "<";
-            this.backwardButton.UseVisualStyleBackColor = true;
-            this.backwardButton.Click += new System.EventHandler(this.backwardButton_Click);
-            // 
-            // forwardButton
-            // 
-            this.forwardButton.Font = new System.Drawing.Font("Showcard Gothic", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.forwardButton.Location = new System.Drawing.Point(465, 386);
-            this.forwardButton.Name = "forwardButton";
-            this.forwardButton.Size = new System.Drawing.Size(58, 55);
-            this.forwardButton.TabIndex = 3;
-            this.forwardButton.Text = ">";
-            this.forwardButton.UseVisualStyleBackColor = true;
-            this.forwardButton.Click += new System.EventHandler(this.forwardButton_Click);
-            // 
             // pictureBox
             // 
+            this.pictureBox.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.pictureBox.Image = global::MemoryGames.Properties.Resources.help1;
-            this.pictureBox.Location = new System.Drawing.Point(12, -1);
+            this.pictureBox.Location = new System.Drawing.Point(12, 2);
             this.pictureBox.Name = "pictureBox";
             this.pictureBox.Size = new System.Drawing.Size(776, 381);
             this.pictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -101,7 +78,7 @@
             this.helpLabel2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.helpLabel2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.helpLabel2.ForeColor = System.Drawing.SystemColors.Control;
-            this.helpLabel2.Location = new System.Drawing.Point(119, 80);
+            this.helpLabel2.Location = new System.Drawing.Point(113, 86);
             this.helpLabel2.Name = "helpLabel2";
             this.helpLabel2.Size = new System.Drawing.Size(239, 42);
             this.helpLabel2.TabIndex = 5;
@@ -114,7 +91,7 @@
             this.helpLabel3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.helpLabel3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.helpLabel3.ForeColor = System.Drawing.SystemColors.Control;
-            this.helpLabel3.Location = new System.Drawing.Point(530, 62);
+            this.helpLabel3.Location = new System.Drawing.Point(517, 65);
             this.helpLabel3.Name = "helpLabel3";
             this.helpLabel3.Size = new System.Drawing.Size(265, 42);
             this.helpLabel3.TabIndex = 6;
@@ -129,8 +106,6 @@
             this.Controls.Add(this.helpLabel3);
             this.Controls.Add(this.helpLabel2);
             this.Controls.Add(this.helpLabel1);
-            this.Controls.Add(this.forwardButton);
-            this.Controls.Add(this.backwardButton);
             this.Controls.Add(this.pictureBox);
             this.Controls.Add(this.closeButton);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
@@ -147,8 +122,6 @@
 
         private System.Windows.Forms.Button closeButton;
         private System.Windows.Forms.PictureBox pictureBox;
-        private System.Windows.Forms.Button backwardButton;
-        private System.Windows.Forms.Button forwardButton;
         private System.Windows.Forms.Label helpLabel1;
         private System.Windows.Forms.Label helpLabel2;
         private System.Windows.Forms.Label helpLabel3;
