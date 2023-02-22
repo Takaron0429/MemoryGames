@@ -1,11 +1,8 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.IO;
 using System.Media;
-using System.Security.Policy;
 using System.Windows.Forms;
-using static System.Windows.Forms.LinkLabel;
-using System.Xml.Linq;
-using System.Collections.Generic;
 
 namespace MemoryGames
 {
@@ -19,8 +16,6 @@ namespace MemoryGames
         {
             Read();
             InitializeComponent();
-
-
         }
         static void Read()
         {
@@ -30,7 +25,6 @@ namespace MemoryGames
             {
                 try
                 {
-                    
                     lines.Add(name.ReadLine().ToString());
                     lines2.Add(money.ReadLine().ToString());
                 }
@@ -44,9 +38,18 @@ namespace MemoryGames
         }
         private void OK()
         {
-            
-            scoreboardListBox.Items.Add( lines[0].ToString() + "    :   " + lines2[0].ToString());
-            
+            try
+            {
+                for (int i = 0; i < lines.Count; i++)
+                {
+                    scoreboardListBox.Items.Clear();
+                    scoreboardListBox.Items.Add(lines[i].ToString() + "    :   " + lines2[i].ToString());
+                }
+            }
+            catch (Exception)
+            {
+                scoreboardListBox.Items.Add("A lista üres!");
+            }
         }
 
         private void Form1_Load(object sender, EventArgs e)

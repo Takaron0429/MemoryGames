@@ -1112,7 +1112,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.MaximizeBox = false;
             this.Name = "Game";
-            this.Text = "Legyen Ön is milliomos! (Fejlesztés alatt)";
+            this.Text = "Legyen Ön is milliomos!";
             this.Load += new System.EventHandler(this.Form2_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
