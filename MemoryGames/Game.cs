@@ -223,6 +223,7 @@ namespace MemoryGames
                 Dcaption.Visible = false;
                 StreamWriter file = new StreamWriter("../../Resources/money.txt");
                 file.WriteLine("40.000.000 Ft");
+                
                 file.Close();
 
                 this.Close();
@@ -273,6 +274,9 @@ namespace MemoryGames
                 developerLabel.Text = list[select].Answer.ToString(); //for testing
 
                 tibi.Enabled = false;
+                Halved.Enabled = true;
+                Phone.Enabled = true;
+                Community.Enabled = true;
             }
 
         }

@@ -19,7 +19,7 @@ namespace MemoryGames
         {
             Read();
             InitializeComponent();
-            OK();
+
 
         }
         static void Read()
@@ -52,6 +52,8 @@ namespace MemoryGames
         private void Form1_Load(object sender, EventArgs e)
         {
             soundplayer.PlayLooping();
+            Read();
+            OK();
         }
 
         private void exitButton_Click(object sender, EventArgs e)
@@ -83,6 +85,12 @@ namespace MemoryGames
         private void scoreboardListBox_SelectedIndexChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void updateButton_Click(object sender, EventArgs e)
+        {
+            Read();
+            OK();
         }
     }
 }

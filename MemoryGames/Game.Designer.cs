@@ -941,6 +941,7 @@
             // Community
             // 
             this.Community.BackColor = System.Drawing.Color.Transparent;
+            this.Community.Enabled = false;
             this.Community.Image = ((System.Drawing.Image)(resources.GetObject("Community.Image")));
             this.Community.Location = new System.Drawing.Point(1012, 29);
             this.Community.Name = "Community";
@@ -952,6 +953,7 @@
             // 
             // Phone
             // 
+            this.Phone.Enabled = false;
             this.Phone.Image = ((System.Drawing.Image)(resources.GetObject("Phone.Image")));
             this.Phone.Location = new System.Drawing.Point(889, 29);
             this.Phone.Name = "Phone";
@@ -963,6 +965,7 @@
             // 
             // Halved
             // 
+            this.Halved.Enabled = false;
             this.Halved.Image = ((System.Drawing.Image)(resources.GetObject("Halved.Image")));
             this.Halved.Location = new System.Drawing.Point(760, 25);
             this.Halved.Name = "Halved";

@@ -96,6 +96,7 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Game.resx">
       <DependentUpon>Game.cs</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="Impressum.resx">
       <DependentUpon>Impressum.cs</DependentUpon>
