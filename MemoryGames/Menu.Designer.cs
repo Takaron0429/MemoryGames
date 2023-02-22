@@ -32,7 +32,6 @@ namespace MemoryGames
         {
             this.startButton = new System.Windows.Forms.Button();
             this.exitButton = new System.Windows.Forms.Button();
-            this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.scoreboardListBox = new System.Windows.Forms.ListBox();
             this.scoreboardLabel = new System.Windows.Forms.Label();
@@ -65,16 +64,6 @@ namespace MemoryGames
             this.exitButton.Text = "KILÉPÉS";
             this.exitButton.UseVisualStyleBackColor = true;
             this.exitButton.Click += new System.EventHandler(this.exitButton_Click);
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.ForeColor = System.Drawing.SystemColors.Control;
-            this.label2.Location = new System.Drawing.Point(12, 428);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(102, 13);
-            this.label2.TabIndex = 3;
-            this.label2.Text = "IN DEVELOPMENT";
             // 
             // label3
             // 
@@ -158,14 +147,13 @@ namespace MemoryGames
             this.Controls.Add(this.scoreboardLabel);
             this.Controls.Add(this.scoreboardListBox);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.label2);
             this.Controls.Add(this.exitButton);
             this.Controls.Add(this.startButton);
             this.DoubleBuffered = true;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.MaximizeBox = false;
             this.Name = "Menu";
-            this.Text = "Legyen Ön is milliomos! (Fejlesztés alatt)";
+            this.Text = "Legyen Ön is milliomos!";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -175,7 +163,6 @@ namespace MemoryGames
         #endregion
         private System.Windows.Forms.Button startButton;
         private System.Windows.Forms.Button exitButton;
-        private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.ListBox scoreboardListBox;
         private System.Windows.Forms.Label scoreboardLabel;

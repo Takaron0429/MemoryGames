@@ -56,10 +56,6 @@ namespace MemoryGames
         {
             soundplayer.Stop();
             Start.Visible = false;
-            Acaption.Enabled = true;
-            Bcaption.Enabled = true;
-            Ccaption.Enabled = true;
-            Dcaption.Enabled = true;
             QuestionBox.Enabled = true;
             tibi.Enabled = true;
         }
@@ -243,10 +239,10 @@ namespace MemoryGames
 
             richTextBox1.Visible = false;
 
-            Acaption.Visible = true; Acaption.BackColor = Color.Black; Acaption.ForeColor = Color.White;
-            Bcaption.Visible = true; Bcaption.BackColor = Color.Black; Bcaption.ForeColor = Color.White;
-            Ccaption.Visible = true; Ccaption.BackColor = Color.Black; Ccaption.ForeColor = Color.White;
-            Dcaption.Visible = true; Dcaption.BackColor = Color.Black; Dcaption.ForeColor = Color.White;
+            Acaption.Visible = true; Acaption.BackColor = Color.Black; Acaption.ForeColor = Color.White; Acaption.Enabled = true;
+            Bcaption.Visible = true; Bcaption.BackColor = Color.Black; Bcaption.ForeColor = Color.White; Bcaption.Enabled = true;
+            Ccaption.Visible = true; Ccaption.BackColor = Color.Black; Ccaption.ForeColor = Color.White; Ccaption.Enabled = true;
+            Dcaption.Visible = true; Dcaption.BackColor = Color.Black; Dcaption.ForeColor = Color.White; Dcaption.Enabled = true;
             List<int> Numbers = new List<int>();
             mp = 25;
 
@@ -295,8 +291,10 @@ namespace MemoryGames
                     soundplayer = new SoundPlayer(@"../../Resources/Kvizjatek_correct-answer.wav");
                     soundplayer.Play();
                     tibi.Enabled = true;
-
-
+                    Acaption.Enabled = false;
+                    Bcaption.Enabled = false;
+                    Ccaption.Enabled = false;
+                    Dcaption.Enabled = false;
                 }
                 else
                 {
@@ -305,6 +303,10 @@ namespace MemoryGames
                     soundplayer = new SoundPlayer(@"../../Resources/Kvizjatek_wrong-answer.wav");
                     soundplayer.Play();
                     tibi.Enabled = true;
+                    Acaption.Enabled = false;
+                    Bcaption.Enabled = false;
+                    Ccaption.Enabled = false;
+                    Dcaption.Enabled = false;
                 }
                 if (Community.Visible == false)
                 {
@@ -327,6 +329,10 @@ namespace MemoryGames
                     soundplayer = new SoundPlayer(@"../../Resources/Kvizjatek_correct-answer.wav");
                     soundplayer.Play();
                     tibi.Enabled = true;
+                    Acaption.Enabled = false;
+                    Bcaption.Enabled = false;
+                    Ccaption.Enabled = false;
+                    Dcaption.Enabled = false;
                 }
                 else
                 {
@@ -335,6 +341,10 @@ namespace MemoryGames
                     soundplayer = new SoundPlayer(@"../../Resources/Kvizjatek_wrong-answer.wav");
                     soundplayer.Play();
                     tibi.Enabled = true;
+                    Acaption.Enabled = false;
+                    Bcaption.Enabled = false;
+                    Ccaption.Enabled = false;
+                    Dcaption.Enabled = false;
                 }
                 if (Community.Visible == false)
                 {
@@ -357,6 +367,10 @@ namespace MemoryGames
                     soundplayer = new SoundPlayer(@"../../Resources/Kvizjatek_correct-answer.wav");
                     soundplayer.Play();
                     tibi.Enabled = true;
+                    Acaption.Enabled = false;
+                    Bcaption.Enabled = false;
+                    Ccaption.Enabled = false;
+                    Dcaption.Enabled = false;
                 }
                 else
                 {
@@ -365,6 +379,10 @@ namespace MemoryGames
                     soundplayer = new SoundPlayer(@"../../Resources/Kvizjatek_wrong-answer.wav");
                     soundplayer.Play();
                     tibi.Enabled = true;
+                    Acaption.Enabled = false;
+                    Bcaption.Enabled = false;
+                    Ccaption.Enabled = false;
+                    Dcaption.Enabled = false;
                 }
                 if (Community.Visible == false)
                 {
@@ -387,6 +405,10 @@ namespace MemoryGames
                     soundplayer = new SoundPlayer(@"../../Resources/Kvizjatek_correct-answer.wav");
                     soundplayer.Play();
                     tibi.Enabled = true;
+                    Acaption.Enabled = false;
+                    Bcaption.Enabled = false;
+                    Ccaption.Enabled = false;
+                    Dcaption.Enabled = false;
                 }
                 else
                 {
@@ -395,6 +417,10 @@ namespace MemoryGames
                     soundplayer = new SoundPlayer(@"../../Resources/Kvizjatek_wrong-answer.wav");
                     soundplayer.Play();
                     tibi.Enabled = true;
+                    Acaption.Enabled = false;
+                    Bcaption.Enabled = false;
+                    Ccaption.Enabled = false;
+                    Dcaption.Enabled = false;
                 }
                 if (Community.Visible == false)
                 {
