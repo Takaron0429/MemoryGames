@@ -14,7 +14,6 @@ namespace MemoryGames
 
         public Menu()
         {
-            Read();
             InitializeComponent();
         }
         static void Read()
@@ -49,6 +48,7 @@ namespace MemoryGames
             catch (Exception)
             {
                 scoreboardListBox.Items.Add("A lista üres!");
+                throw;
             }
         }
 
@@ -70,7 +70,7 @@ namespace MemoryGames
             soundplayer.Stop();
             this.Hide();
             f4.ShowDialog();
-            this.Close();
+            Application.Exit();
         }
 
         private void impressumLabel_Click(object sender, EventArgs e)

@@ -684,7 +684,6 @@
             this.developerLabel.Size = new System.Drawing.Size(271, 31);
             this.developerLabel.TabIndex = 62;
             this.developerLabel.Text = "DEVELOPER LABEL";
-            this.developerLabel.Visible = false;
             // 
             // Cont
             // 

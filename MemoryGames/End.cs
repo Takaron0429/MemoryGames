@@ -9,8 +9,6 @@ namespace MemoryGames {
     public partial class End : Form {
         public End() {
             InitializeComponent();
-            Read();
-            OK();
         }
         SoundPlayer soundplayer = new SoundPlayer();
         static List<string> lines = new List<string>();
@@ -53,17 +51,23 @@ namespace MemoryGames {
                 Money.ForeColor = Color.Green;
                 label1.Text = "Győztél";
                 label1.ForeColor = Color.Orange;
-                soundplayer = new SoundPlayer(@"../../Resources/Resources/Kvizjatek_Audience-Clapping-Sound-Effect.wav");
+                soundplayer = new SoundPlayer(@"../../Resources/Kvizjatek_Audience-Clapping-Sound-Effect.wav");
                 soundplayer.Play();
             }
 
+        }
+
+        private void End_Load(object sender, EventArgs e)
+        {
+            Read();
+            OK();
         }
 
         private void button1_Click(object sender, EventArgs e) {
             Menu f2 = new Menu();
             this.Hide();
             f2.ShowDialog();
-            this.Close();
+            Application.Exit();
         }
 
         private void name_Click(object sender, EventArgs e) {
@@ -71,6 +75,11 @@ namespace MemoryGames {
         }
 
         private void label1_Click(object sender, EventArgs e) {
+
+        }
+
+        private void pictureBox2_Click(object sender, EventArgs e)
+        {
 
         }
     }

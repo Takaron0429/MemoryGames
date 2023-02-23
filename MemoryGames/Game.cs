@@ -82,7 +82,7 @@ namespace MemoryGames
                 End f6 = new End();
                 this.Hide();
                 f6.ShowDialog();
-                this.Close();
+                Application.Exit();
             }
 
         }
@@ -233,11 +233,11 @@ namespace MemoryGames
 
                 file.Close();
 
-                this.Close();
+
                 End f6 = new End();
                 this.Hide();
                 f6.ShowDialog();
-
+                Application.Exit();
             }
         }
 
@@ -325,7 +325,7 @@ namespace MemoryGames
                     End f6 = new End();
                     this.Hide();
                     f6.ShowDialog();
-                    this.Close();
+                    Application.Exit();
                 }
                 if (Community.Visible == false)
                 {
@@ -371,7 +371,7 @@ namespace MemoryGames
                     End f6 = new End();
                     this.Hide();
                     f6.ShowDialog();
-                    this.Close();
+                    Application.Exit();
                 }
                 if (Community.Visible == false)
                 {
@@ -417,7 +417,7 @@ namespace MemoryGames
                     End f6 = new End();
                     this.Hide();
                     f6.ShowDialog();
-                    this.Close();
+                    Application.Exit();
                 }
                 if (Community.Visible == false)
                 {
@@ -463,7 +463,7 @@ namespace MemoryGames
                     End f6 = new End();
                     this.Hide();
                     f6.ShowDialog();
-                    this.Close();
+                    Application.Exit();
                 }
                 if (Community.Visible == false)
                 {
