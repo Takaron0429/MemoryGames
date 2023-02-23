@@ -34,6 +34,10 @@ namespace MemoryGames {
 
             foreach (var str in lines) {
                 name.Text = str;
+                if (name.Text.Length<=6)
+                {
+                    name.Location = new Point(240, 21);
+                }
 
             }
             foreach (var str in lines2) {
@@ -45,6 +49,8 @@ namespace MemoryGames {
                 Money.Location = new Point(243, 6);
                 label1.Text = "Vesztettél";
                 label1.ForeColor = Color.Red;
+                label1.Location = new Point(310, 164);
+
                 soundplayer = new SoundPlayer(@"../../Resources/Kvizjatek_The-Price-is-Right-Losing-Horn-Gaming-Sound-Effect-_HD_.wav");
                 soundplayer.Play();
 
@@ -53,6 +59,9 @@ namespace MemoryGames {
                 Money.ForeColor = Color.Green;
                 label1.Text = "Győztél";
                 label1.ForeColor = Color.Orange;
+               
+                label1.Location = new Point(310, 164);
+
                 soundplayer = new SoundPlayer(@"../../Resources/Resources/Kvizjatek_Audience-Clapping-Sound-Effect.wav");
                 soundplayer.Play();
             }
