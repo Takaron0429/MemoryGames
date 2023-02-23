@@ -60,7 +60,7 @@ namespace MemoryGames {
                
                 label1.Location = new Point(310, 164);
 
-                soundplayer = new SoundPlayer(@"../../Resources/Resources/Kvizjatek_Audience-Clapping-Sound-Effect.wav");
+                soundplayer = new SoundPlayer(@"../../Resources/Kvizjatek_Audience-Clapping-Sound-Effect.wav");
                 soundplayer.Play();
             }
 
