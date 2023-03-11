@@ -7,27 +7,34 @@ using System.Windows.Forms;
 
 namespace MemoryGames {
     public partial class End : Form {
-        public End() {
-            InitializeComponent();
-        }
+
         SoundPlayer soundplayer = new SoundPlayer();
         static List<string> lines = new List<string>();
         static List<string> lines2 = new List<string>();
-        static void Read() {
+        static void Read()
+        {
             StreamReader name = new StreamReader("../../Resources/username.txt");
             StreamReader money = new StreamReader("../../Resources/money.txt");
-            while (!name.EndOfStream && !money.EndOfStream) {
-                try {
+            while (!name.EndOfStream && !money.EndOfStream)
+            {
+                try
+                {
                     lines.Add(name.ReadLine().ToString());
                     lines2.Add(money.ReadLine().ToString());
                 }
-                catch (Exception error) {
+                catch (Exception error)
+                {
                     MessageBox.Show(error.Message);
                 }
             }
             money.Close();
             name.Close();
         }
+
+        public End() {
+            InitializeComponent();
+        }
+
         private void OK() {
 
             foreach (var str in lines) {
@@ -53,7 +60,7 @@ namespace MemoryGames {
                 soundplayer.Play();
 
             }
-            else if (Money.Text == "100.000 Ft" || Money.Text == "1.500.000" || Money.Text == "40.000.000") {
+            else if (Money.Text == "100.000 Ft" || Money.Text == "1.500.000 Ft" || Money.Text == "40.000.000 Ft") {
                 Money.ForeColor = Color.Green;
                 label1.Text = "Győztél";
                 label1.ForeColor = Color.Orange;
@@ -76,7 +83,7 @@ namespace MemoryGames {
             Menu f2 = new Menu();
             this.Hide();
             f2.ShowDialog();
-            Application.Exit();
+            this.Close();
         }
 
         private void name_Click(object sender, EventArgs e) {

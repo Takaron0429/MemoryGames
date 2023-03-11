@@ -82,7 +82,7 @@ namespace MemoryGames
                 End f6 = new End();
                 this.Hide();
                 f6.ShowDialog();
-                Application.Exit();
+                this.Close();
             }
 
         }
@@ -221,6 +221,7 @@ namespace MemoryGames
                 Win.Text = "Szép játék volt! Most már te is Milliomos vagy!";
 
                 tibi.Enabled = false;
+                timer1.Stop();
 
                 QuestionBox.Visible = false;
 
@@ -237,7 +238,7 @@ namespace MemoryGames
                 End f6 = new End();
                 this.Hide();
                 f6.ShowDialog();
-                Application.Exit();
+                this.Close();
             }
         }
 
@@ -325,7 +326,7 @@ namespace MemoryGames
                     End f6 = new End();
                     this.Hide();
                     f6.ShowDialog();
-                    Application.Exit();
+                    this.Close();
                 }
                 if (Community.Visible == false)
                 {
@@ -371,7 +372,7 @@ namespace MemoryGames
                     End f6 = new End();
                     this.Hide();
                     f6.ShowDialog();
-                    Application.Exit();
+                    this.Close();
                 }
                 if (Community.Visible == false)
                 {
@@ -417,7 +418,7 @@ namespace MemoryGames
                     End f6 = new End();
                     this.Hide();
                     f6.ShowDialog();
-                    Application.Exit();
+                    this.Close();
                 }
                 if (Community.Visible == false)
                 {
@@ -463,7 +464,7 @@ namespace MemoryGames
                     End f6 = new End();
                     this.Hide();
                     f6.ShowDialog();
-                    Application.Exit();
+                    this.Close();
                 }
                 if (Community.Visible == false)
                 {
