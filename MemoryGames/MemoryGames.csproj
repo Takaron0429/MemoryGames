@@ -130,6 +130,7 @@
     <None Include="Resources\legyen-on-is-milliomos.jpg" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\mathiasz_logo.png" />
     <None Include="Resources\money40.PNG" />
     <None Include="Resources\name.PNG" />
     <None Include="Resources\Tibi.jpg" />

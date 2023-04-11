@@ -33,7 +33,9 @@
             this.vrLabel = new System.Windows.Forms.Label();
             this.madebyLabel = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
             // closeButton
@@ -87,12 +89,22 @@
             // 
             this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pictureBox1.Image = global::MemoryGames.Properties.Resources.legyen_on_is_milliomos_logo;
-            this.pictureBox1.Location = new System.Drawing.Point(12, 114);
+            this.pictureBox1.Location = new System.Drawing.Point(-86, 114);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(364, 311);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 17;
             this.pictureBox1.TabStop = false;
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Image = global::MemoryGames.Properties.Resources.mathiasz_logo;
+            this.pictureBox2.Location = new System.Drawing.Point(216, 193);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(160, 161);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox2.TabIndex = 18;
+            this.pictureBox2.TabStop = false;
             // 
             // Impressum
             // 
@@ -100,6 +112,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(43)))), ((int)(((byte)(83)))));
             this.ClientSize = new System.Drawing.Size(388, 437);
+            this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.closeButton);
             this.Controls.Add(this.tkLabel);
             this.Controls.Add(this.vrLabel);
@@ -110,6 +123,7 @@
             this.Name = "Impressum";
             this.Text = "Legyen Ön is milliomos!";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -122,5 +136,6 @@
         private System.Windows.Forms.Label vrLabel;
         private System.Windows.Forms.Label madebyLabel;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.PictureBox pictureBox2;
     }
 }

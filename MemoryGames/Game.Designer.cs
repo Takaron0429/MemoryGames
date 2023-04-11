@@ -217,7 +217,7 @@
             this.tibi.Name = "tibi";
             this.tibi.Size = new System.Drawing.Size(100, 42);
             this.tibi.TabIndex = 19;
-            this.tibi.Text = "Kocsis Tibor";
+            this.tibi.Text = "Vágó István";
             this.tibi.UseVisualStyleBackColor = false;
             this.tibi.Click += new System.EventHandler(this.tibi_Click);
             // 
@@ -684,6 +684,7 @@
             this.developerLabel.Size = new System.Drawing.Size(271, 31);
             this.developerLabel.TabIndex = 62;
             this.developerLabel.Text = "DEVELOPER LABEL";
+            this.developerLabel.Visible = false;
             // 
             // Cont
             // 
@@ -986,7 +987,7 @@
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Image = global::MemoryGames.Properties.Resources.Tibi;
+            this.pictureBox1.Image = global::MemoryGames.Properties.Resources.Vago;
             this.pictureBox1.Location = new System.Drawing.Point(12, 12);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(126, 134);

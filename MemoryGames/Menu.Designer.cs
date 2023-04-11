@@ -37,6 +37,8 @@ namespace MemoryGames
             this.scoreboardLabel = new System.Windows.Forms.Label();
             this.impressumLabel = new System.Windows.Forms.Label();
             this.helpButton = new System.Windows.Forms.Button();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // startButton
@@ -72,7 +74,7 @@ namespace MemoryGames
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(60, 13);
             this.label3.TabIndex = 4;
-            this.label3.Text = "Version 1.3";
+            this.label3.Text = "Version 1.5";
             // 
             // scoreboardListBox
             // 
@@ -120,6 +122,16 @@ namespace MemoryGames
             this.helpButton.UseVisualStyleBackColor = true;
             this.helpButton.Click += new System.EventHandler(this.helpButton_Click);
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::MemoryGames.Properties.Resources.mathiasz_logo;
+            this.pictureBox1.Location = new System.Drawing.Point(12, 357);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(79, 88);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 9;
+            this.pictureBox1.TabStop = false;
+            // 
             // Menu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -128,6 +140,7 @@ namespace MemoryGames
             this.BackgroundImage = global::MemoryGames.Properties.Resources.legyen_on_is_milliomos;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.helpButton);
             this.Controls.Add(this.impressumLabel);
             this.Controls.Add(this.scoreboardLabel);
@@ -141,6 +154,7 @@ namespace MemoryGames
             this.Name = "Menu";
             this.Text = "Legyen Ön is milliomos!";
             this.Load += new System.EventHandler(this.Form1_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -154,6 +168,7 @@ namespace MemoryGames
         private System.Windows.Forms.Label scoreboardLabel;
         private System.Windows.Forms.Label impressumLabel;
         private System.Windows.Forms.Button helpButton;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }
 
