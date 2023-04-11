@@ -61,7 +61,7 @@ namespace MemoryGames
 
         private void exitButton_Click(object sender, EventArgs e)
         {
-            this.Close();
+            Application.Exit();
         }
 
         private void startButton_Click(object sender, EventArgs e)
@@ -70,7 +70,7 @@ namespace MemoryGames
             soundplayer.Stop();
             this.Hide();
             f4.ShowDialog();
-            this.Close();
+            this.Show();
         }
 
         private void impressumLabel_Click(object sender, EventArgs e)

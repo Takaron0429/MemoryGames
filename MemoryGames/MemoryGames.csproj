@@ -140,7 +140,6 @@
     <None Include="Resources\legyen-on-is-milliomos-logo.png" />
     <None Include="Resources\felezo.png" />
     <None Include="Resources\kozonseg.png" />
-    <None Include="Resources\digital-clock-png.png" />
     <None Include="Resources\digital-clock.png" />
     <None Include="Resources\box.PNG" />
     <None Include="Resources\help1.PNG" />

@@ -80,9 +80,6 @@ namespace MemoryGames {
         }
 
         private void button1_Click(object sender, EventArgs e) {
-            Menu f2 = new Menu();
-            this.Hide();
-            f2.ShowDialog();
             this.Close();
         }
 

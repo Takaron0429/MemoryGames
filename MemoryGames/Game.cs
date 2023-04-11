@@ -12,6 +12,7 @@ namespace MemoryGames
         static List<Class> list = new List<Class>();
 
         Random rnd = new Random();
+        End f6 = new End();
 
         int Round = 0;
 
@@ -79,7 +80,6 @@ namespace MemoryGames
                 file.WriteLine("0 Ft");
                 file.Close();
 
-                End f6 = new End();
                 this.Hide();
                 f6.ShowDialog();
                 this.Close();
@@ -235,7 +235,6 @@ namespace MemoryGames
                 file.Close();
 
 
-                End f6 = new End();
                 this.Hide();
                 f6.ShowDialog();
                 this.Close();
@@ -323,10 +322,10 @@ namespace MemoryGames
                     file.WriteLine("0 Ft");
                     file.Close();
 
-                    End f6 = new End();
                     this.Hide();
                     f6.ShowDialog();
                     this.Close();
+                    break;
                 }
                 if (Community.Visible == false)
                 {
@@ -369,10 +368,10 @@ namespace MemoryGames
                     file.WriteLine("0 Ft");
                     file.Close();
 
-                    End f6 = new End();
                     this.Hide();
                     f6.ShowDialog();
                     this.Close();
+                    break;
                 }
                 if (Community.Visible == false)
                 {
@@ -415,10 +414,10 @@ namespace MemoryGames
                     file.WriteLine("0 Ft");
                     file.Close();
 
-                    End f6 = new End();
                     this.Hide();
                     f6.ShowDialog();
                     this.Close();
+                    break;
                 }
                 if (Community.Visible == false)
                 {
@@ -461,10 +460,10 @@ namespace MemoryGames
                     file.WriteLine("0 Ft");
                     file.Close();
 
-                    End f6 = new End();
                     this.Hide();
                     f6.ShowDialog();
                     this.Close();
+                    break;
                 }
                 if (Community.Visible == false)
                 {
@@ -496,9 +495,8 @@ namespace MemoryGames
                 file.Close();
             }
 
-            End f6 = new End();
             this.Hide();
-            f6.ShowDialog();
+            f6.Show();
             this.Close();
         }
 

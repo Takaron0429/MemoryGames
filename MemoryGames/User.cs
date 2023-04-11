@@ -22,8 +22,6 @@ namespace MemoryGames
             this.Hide();
             f2.ShowDialog();
             this.Close();
-
-
         }
 
         private void userTextBox_TextChanged(object sender, EventArgs e)
