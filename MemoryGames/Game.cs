@@ -77,7 +77,7 @@ namespace MemoryGames
             if (mp == 0)
             {
                 StreamWriter file = new StreamWriter("../../Resources/money.txt");
-                file.WriteLine("0 Ft");
+                file.WriteLine("Ajándék 1");
                 file.Close();
 
                 this.Hide();
@@ -121,7 +121,7 @@ namespace MemoryGames
 
                 richTextBox1.Visible = true;
                 pictureBox8.Visible = true;
-                richTextBox1.Text = "Gratulálok! Kilépőponthoz erkeztünk, ha kilépni kivánsz és el vinni a 100.000 Ft nyomd meg a  a bal alsó sarokban a kilép gombot. Ha viszont folytatni akarod akkor nyomd meg a folytatást!";
+                richTextBox1.Text = "Gratulálok! Kilépőponthoz erkeztünk, ha kilépni kivánsz és el vinni az 1. Ajándékot nyomd meg a  a bal alsó sarokban a kilép gombot. Ha viszont folytatni akarod akkor nyomd meg a folytatást!";
                 ImOut.Visible = true;
                 Cont.Visible = true;
                 tibi.Enabled = false;
@@ -172,7 +172,7 @@ namespace MemoryGames
 
                 richTextBox1.Visible = true;
                 pictureBox8.Visible = true;
-                richTextBox1.Text = "Gratulálok! Folytatod vagy elviszed a 1.500.000 Ft?";
+                richTextBox1.Text = "Gratulálok! Folytatod vagy elviszed a 2. Ajándékot?";
                 ImOut.Visible = true;
                 Cont.Visible = true;
                 tibi.Enabled = false;
@@ -230,7 +230,7 @@ namespace MemoryGames
                 Ccaption.Visible = false;
                 Dcaption.Visible = false;
                 StreamWriter file = new StreamWriter("../../Resources/money.txt");
-                file.WriteLine("40.000.000 Ft");
+                file.WriteLine("Mindent visz!");
 
                 file.Close();
 
@@ -318,9 +318,25 @@ namespace MemoryGames
                     Bcaption.Enabled = false;
                     Ccaption.Enabled = false;
                     Dcaption.Enabled = false;
-                    StreamWriter file = new StreamWriter("../../Resources/money.txt");
-                    file.WriteLine("0 Ft");
-                    file.Close();
+
+                    if (Round > 10)
+                    {
+                        StreamWriter file2 = new StreamWriter("../../Resources/money.txt");
+                        file2.WriteLine("Ajándék 3");
+                        file2.Close();
+                    }
+                    else if (Round > 5)
+                    {
+                        StreamWriter file2 = new StreamWriter("../../Resources/money.txt");
+                        file2.WriteLine("Ajándék 2");
+                        file2.Close();
+                    }
+                    else
+                    {
+                        StreamWriter file = new StreamWriter("../../Resources/money.txt");
+                        file.WriteLine("Ajándék 1");
+                        file.Close();
+                    }
 
                     this.Hide();
                     f6.ShowDialog();
@@ -364,9 +380,25 @@ namespace MemoryGames
                     Bcaption.Enabled = false;
                     Ccaption.Enabled = false;
                     Dcaption.Enabled = false;
-                    StreamWriter file = new StreamWriter("../../Resources/money.txt");
-                    file.WriteLine("0 Ft");
-                    file.Close();
+
+                    if (Round > 10)
+                    {
+                        StreamWriter file2 = new StreamWriter("../../Resources/money.txt");
+                        file2.WriteLine("Ajándék 3");
+                        file2.Close();
+                    }
+                    else if (Round > 5)
+                    {
+                        StreamWriter file2 = new StreamWriter("../../Resources/money.txt");
+                        file2.WriteLine("Ajándék 2");
+                        file2.Close();
+                    }
+                    else
+                    {
+                        StreamWriter file = new StreamWriter("../../Resources/money.txt");
+                        file.WriteLine("Ajándék 1");
+                        file.Close();
+                    }
 
                     this.Hide();
                     f6.ShowDialog();
@@ -410,9 +442,25 @@ namespace MemoryGames
                     Bcaption.Enabled = false;
                     Ccaption.Enabled = false;
                     Dcaption.Enabled = false;
-                    StreamWriter file = new StreamWriter("../../Resources/money.txt");
-                    file.WriteLine("0 Ft");
-                    file.Close();
+
+                    if (Round > 10)
+                    {
+                        StreamWriter file2 = new StreamWriter("../../Resources/money.txt");
+                        file2.WriteLine("Ajándék 3");
+                        file2.Close();
+                    }
+                    else if (Round > 5)
+                    {
+                        StreamWriter file2 = new StreamWriter("../../Resources/money.txt");
+                        file2.WriteLine("Ajándék 2");
+                        file2.Close();
+                    }
+                    else
+                    {
+                        StreamWriter file = new StreamWriter("../../Resources/money.txt");
+                        file.WriteLine("Ajándék 1");
+                        file.Close();
+                    }
 
                     this.Hide();
                     f6.ShowDialog();
@@ -456,9 +504,25 @@ namespace MemoryGames
                     Bcaption.Enabled = false;
                     Ccaption.Enabled = false;
                     Dcaption.Enabled = false;
-                    StreamWriter file = new StreamWriter("../../Resources/money.txt");
-                    file.WriteLine("0 Ft");
-                    file.Close();
+
+                    if (Round > 10)
+                    {
+                        StreamWriter file2 = new StreamWriter("../../Resources/money.txt");
+                        file2.WriteLine("Ajándék 3");
+                        file2.Close();
+                    }
+                    else if (Round > 5)
+                    {
+                        StreamWriter file2 = new StreamWriter("../../Resources/money.txt");
+                        file2.WriteLine("Ajándék 2");
+                        file2.Close();
+                    }
+                    else
+                    {
+                        StreamWriter file = new StreamWriter("../../Resources/money.txt");
+                        file.WriteLine("Ajándék 1");
+                        file.Close();
+                    }
 
                     this.Hide();
                     f6.ShowDialog();
@@ -485,18 +549,18 @@ namespace MemoryGames
             if (Round == 5)
             {
                 StreamWriter file = new StreamWriter("../../Resources/money.txt");
-                file.WriteLine("100.000 Ft");
+                file.WriteLine("Ajándék 2");
                 file.Close();
             }
             else if (Round == 10)
             {
                 StreamWriter file = new StreamWriter("../../Resources/money.txt");
-                file.WriteLine("1.500.000 Ft");
+                file.WriteLine("Ajándék 3");
                 file.Close();
             }
 
             this.Hide();
-            f6.Show();
+            f6.ShowDialog();
             this.Close();
         }
 
@@ -547,7 +611,6 @@ namespace MemoryGames
                 Bar2 = rnd.Next(0, 100);
                 Bar3 = rnd.Next(0, 100);
                 Bar4 = rnd.Next(0, 100);
-
             }
 
             progressBar1.Value = Bar1;

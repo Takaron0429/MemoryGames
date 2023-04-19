@@ -49,20 +49,20 @@ namespace MemoryGames {
                 Money.Text = str;
 
             }
-            if (Money.Text == "0 Ft") {
-                Money.ForeColor = Color.Red;
+            if (Money.Text == "Ajándék 1") {
+                Money.ForeColor = Color.Green;
                 Money.Location = new Point(243, 6);
-                label1.Text = "Vesztettél";
-                label1.ForeColor = Color.Red;
+                label1.Text = "Nyertél!";
+                label1.ForeColor = Color.Orange;
                 label1.Location = new Point(310, 164);
 
                 soundplayer = new SoundPlayer(@"../../Resources/Kvizjatek_The-Price-is-Right-Losing-Horn-Gaming-Sound-Effect-_HD_.wav");
                 soundplayer.Play();
 
             }
-            else if (Money.Text == "100.000 Ft" || Money.Text == "1.500.000 Ft" || Money.Text == "40.000.000 Ft") {
+            else if (Money.Text == "Ajándék 2" || Money.Text == "Ajándék 3" || Money.Text == "Mindent visz!") {
                 Money.ForeColor = Color.Green;
-                label1.Text = "Győztél";
+                label1.Text = "Nyertél";
                 label1.ForeColor = Color.Orange;
                
                 label1.Location = new Point(310, 164);

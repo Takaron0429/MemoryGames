@@ -144,6 +144,9 @@
     <None Include="Resources\digital-clock.png" />
     <None Include="Resources\box.PNG" />
     <None Include="Resources\help1.PNG" />
+    <Content Include="Resources\loim.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
     <Content Include="Resources\Main-Theme.wav" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

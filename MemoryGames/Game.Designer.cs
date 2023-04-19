@@ -30,7 +30,6 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Game));
-            this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
@@ -39,8 +38,6 @@
             this.tibi = new System.Windows.Forms.Button();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.Time = new System.Windows.Forms.Label();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.label12 = new System.Windows.Forms.Label();
             this.label14 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
@@ -109,7 +106,9 @@
             this.pictureBox8 = new System.Windows.Forms.PictureBox();
             this.pictureBox6 = new System.Windows.Forms.PictureBox();
             this.AskBack = new System.Windows.Forms.PictureBox();
-            this.panel1.SuspendLayout();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label12 = new System.Windows.Forms.Label();
+            this.panel1 = new System.Windows.Forms.Panel();
             this.panel3.SuspendLayout();
             this.panel4.SuspendLayout();
             this.panel5.SuspendLayout();
@@ -133,19 +132,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.AskBack)).BeginInit();
+            this.panel1.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(10, 1);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(15, 16);
-            this.label1.TabIndex = 7;
-            this.label1.Text = "1";
             // 
             // label2
             // 
@@ -238,29 +226,6 @@
             this.Time.TabIndex = 21;
             this.Time.Text = "0:0";
             // 
-            // panel1
-            // 
-            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.panel1.Controls.Add(this.label12);
-            this.panel1.Controls.Add(this.label1);
-            this.panel1.ForeColor = System.Drawing.Color.White;
-            this.panel1.Location = new System.Drawing.Point(882, 577);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(213, 18);
-            this.panel1.TabIndex = 22;
-            // 
-            // label12
-            // 
-            this.label12.AutoSize = true;
-            this.label12.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label12.ForeColor = System.Drawing.Color.White;
-            this.label12.Location = new System.Drawing.Point(138, 1);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(60, 16);
-            this.label12.TabIndex = 29;
-            this.label12.Text = "5.000 Ft";
-            // 
             // label14
             // 
             this.label14.AutoSize = true;
@@ -341,9 +306,9 @@
             this.label15.ForeColor = System.Drawing.Color.White;
             this.label15.Location = new System.Drawing.Point(138, 0);
             this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(68, 16);
+            this.label15.Size = new System.Drawing.Size(76, 16);
             this.label15.TabIndex = 30;
-            this.label15.Text = "10.000 Ft";
+            this.label15.Text = "Ajándék 1";
             // 
             // panel2
             // 
@@ -362,9 +327,9 @@
             this.label16.ForeColor = System.Drawing.Color.White;
             this.label16.Location = new System.Drawing.Point(138, 0);
             this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(68, 16);
+            this.label16.Size = new System.Drawing.Size(76, 16);
             this.label16.TabIndex = 32;
-            this.label16.Text = "25.000 Ft";
+            this.label16.Text = "Ajándék 1";
             // 
             // label17
             // 
@@ -374,9 +339,9 @@
             this.label17.ForeColor = System.Drawing.Color.White;
             this.label17.Location = new System.Drawing.Point(138, 0);
             this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(68, 16);
+            this.label17.Size = new System.Drawing.Size(76, 16);
             this.label17.TabIndex = 33;
-            this.label17.Text = "50.000 Ft";
+            this.label17.Text = "Ajándék 1";
             // 
             // label18
             // 
@@ -388,7 +353,7 @@
             this.label18.Name = "label18";
             this.label18.Size = new System.Drawing.Size(76, 16);
             this.label18.TabIndex = 34;
-            this.label18.Text = "100.000 Ft";
+            this.label18.Text = "Ajándék 2";
             // 
             // label19
             // 
@@ -400,7 +365,7 @@
             this.label19.Name = "label19";
             this.label19.Size = new System.Drawing.Size(76, 16);
             this.label19.TabIndex = 35;
-            this.label19.Text = "200.000 Ft";
+            this.label19.Text = "Ajándék 2";
             // 
             // label20
             // 
@@ -412,7 +377,7 @@
             this.label20.Name = "label20";
             this.label20.Size = new System.Drawing.Size(76, 16);
             this.label20.TabIndex = 36;
-            this.label20.Text = "300.000 Ft";
+            this.label20.Text = "Ajándék 2";
             // 
             // label21
             // 
@@ -424,7 +389,7 @@
             this.label21.Name = "label21";
             this.label21.Size = new System.Drawing.Size(76, 16);
             this.label21.TabIndex = 37;
-            this.label21.Text = "500.000 Ft";
+            this.label21.Text = "Ajándék 2";
             // 
             // label22
             // 
@@ -436,7 +401,7 @@
             this.label22.Name = "label22";
             this.label22.Size = new System.Drawing.Size(76, 16);
             this.label22.TabIndex = 38;
-            this.label22.Text = "800.000 Ft";
+            this.label22.Text = "Ajándék 2";
             // 
             // label23
             // 
@@ -446,9 +411,9 @@
             this.label23.ForeColor = System.Drawing.Color.White;
             this.label23.Location = new System.Drawing.Point(125, 0);
             this.label23.Name = "label23";
-            this.label23.Size = new System.Drawing.Size(88, 16);
+            this.label23.Size = new System.Drawing.Size(76, 16);
             this.label23.TabIndex = 39;
-            this.label23.Text = "1.500.000 Ft";
+            this.label23.Text = "Ajándék 3";
             // 
             // label24
             // 
@@ -458,9 +423,9 @@
             this.label24.ForeColor = System.Drawing.Color.White;
             this.label24.Location = new System.Drawing.Point(125, 0);
             this.label24.Name = "label24";
-            this.label24.Size = new System.Drawing.Size(88, 16);
+            this.label24.Size = new System.Drawing.Size(76, 16);
             this.label24.TabIndex = 40;
-            this.label24.Text = "3.000.000 Ft";
+            this.label24.Text = "Ajándék 3";
             // 
             // label25
             // 
@@ -470,9 +435,9 @@
             this.label25.ForeColor = System.Drawing.Color.White;
             this.label25.Location = new System.Drawing.Point(125, 0);
             this.label25.Name = "label25";
-            this.label25.Size = new System.Drawing.Size(88, 16);
+            this.label25.Size = new System.Drawing.Size(76, 16);
             this.label25.TabIndex = 41;
-            this.label25.Text = "5.000.000 Ft";
+            this.label25.Text = "Ajándék 3";
             // 
             // panel3
             // 
@@ -684,7 +649,6 @@
             this.developerLabel.Size = new System.Drawing.Size(271, 31);
             this.developerLabel.TabIndex = 62;
             this.developerLabel.Text = "DEVELOPER LABEL";
-            this.developerLabel.Visible = false;
             // 
             // Cont
             // 
@@ -735,9 +699,9 @@
             this.label13.ForeColor = System.Drawing.Color.White;
             this.label13.Location = new System.Drawing.Point(117, 0);
             this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(96, 16);
+            this.label13.Size = new System.Drawing.Size(76, 16);
             this.label13.TabIndex = 41;
-            this.label13.Text = "10.000.000 Ft";
+            this.label13.Text = "Ajándék 3";
             // 
             // label26
             // 
@@ -771,7 +735,7 @@
             this.label27.Name = "label27";
             this.label27.Size = new System.Drawing.Size(96, 16);
             this.label27.TabIndex = 41;
-            this.label27.Text = "40.000.000 Ft";
+            this.label27.Text = "Mindent visz!";
             // 
             // label28
             // 
@@ -803,9 +767,9 @@
             this.label29.ForeColor = System.Drawing.Color.White;
             this.label29.Location = new System.Drawing.Point(117, 0);
             this.label29.Name = "label29";
-            this.label29.Size = new System.Drawing.Size(96, 16);
+            this.label29.Size = new System.Drawing.Size(76, 16);
             this.label29.TabIndex = 41;
-            this.label29.Text = "20.000.000 Ft";
+            this.label29.Text = "Ajándék 3";
             // 
             // label30
             // 
@@ -1047,6 +1011,41 @@
             this.AskBack.TabStop = false;
             this.AskBack.Visible = false;
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.MediumBlue;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.label1.ForeColor = System.Drawing.Color.White;
+            this.label1.Location = new System.Drawing.Point(10, 1);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(15, 16);
+            this.label1.TabIndex = 7;
+            this.label1.Text = "1";
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.BackColor = System.Drawing.Color.MediumBlue;
+            this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.label12.ForeColor = System.Drawing.Color.White;
+            this.label12.Location = new System.Drawing.Point(138, 1);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(76, 16);
+            this.label12.TabIndex = 29;
+            this.label12.Text = "Ajándék 1";
+            // 
+            // panel1
+            // 
+            this.panel1.BackColor = System.Drawing.Color.MediumBlue;
+            this.panel1.Controls.Add(this.label12);
+            this.panel1.Controls.Add(this.label1);
+            this.panel1.ForeColor = System.Drawing.Color.White;
+            this.panel1.Location = new System.Drawing.Point(882, 577);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(213, 18);
+            this.panel1.TabIndex = 22;
+            // 
             // Game
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1115,8 +1114,6 @@
             this.Name = "Game";
             this.Text = "Legyen Ön is milliomos!";
             this.Load += new System.EventHandler(this.Form2_Load);
-            this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
             this.panel4.ResumeLayout(false);
@@ -1154,6 +1151,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.AskBack)).EndInit();
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -1161,7 +1160,6 @@
 
         #endregion
         private System.Windows.Forms.Button Acaption;
-        private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
@@ -1171,14 +1169,12 @@
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Timer timer1;
         private System.Windows.Forms.Label Time;
-        private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label label14;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label label11;
-        private System.Windows.Forms.Label label12;
         private System.Windows.Forms.Label label15;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Label label16;
@@ -1239,5 +1235,8 @@
         private System.Windows.Forms.ProgressBar progressBar3;
         private System.Windows.Forms.ProgressBar progressBar4;
         private System.Windows.Forms.Panel panel14;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.Panel panel1;
     }
 }
