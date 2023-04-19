@@ -41,7 +41,6 @@ namespace MemoryGames
             {
                 for (int i = 0; i < lines.Count; i++)
                 {
-                    scoreboardListBox.Items.Clear();
                     scoreboardListBox.Items.Add(lines[i].ToString() + "    :   " + lines2[i].ToString());
                 }
             }
@@ -71,6 +70,10 @@ namespace MemoryGames
             this.Hide();
             f4.ShowDialog();
             this.Show();
+            soundplayer.PlayLooping();
+            scoreboardListBox.Items.Clear();
+            Read();
+            OK();
         }
 
         private void impressumLabel_Click(object sender, EventArgs e)

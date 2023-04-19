@@ -56,7 +56,7 @@ namespace MemoryGames {
                 label1.ForeColor = Color.Orange;
                 label1.Location = new Point(310, 164);
 
-                soundplayer = new SoundPlayer(@"../../Resources/Kvizjatek_The-Price-is-Right-Losing-Horn-Gaming-Sound-Effect-_HD_.wav");
+                soundplayer = new SoundPlayer(@"../../Resources/Kvizjatek_Audience-Clapping-Sound-Effect.wav");
                 soundplayer.Play();
 
             }

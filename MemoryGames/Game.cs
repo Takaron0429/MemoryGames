@@ -260,6 +260,9 @@ namespace MemoryGames
             Time.ForeColor = Color.Gold;
             timer1.Start();
 
+            NextQuestion1.Visible = false;
+            NextQuestion2.Visible = false;
+
             Round++; //Kör 1-15
             Rounds();
             for (int i = 1; i <= 15; i++)
@@ -306,6 +309,9 @@ namespace MemoryGames
                     Bcaption.Enabled = false;
                     Ccaption.Enabled = false;
                     Dcaption.Enabled = false;
+
+                    NextQuestion1.Visible = true;
+                    NextQuestion2.Visible = true;
                 }
                 else
                 {
@@ -368,6 +374,8 @@ namespace MemoryGames
                     Bcaption.Enabled = false;
                     Ccaption.Enabled = false;
                     Dcaption.Enabled = false;
+                    NextQuestion1.Visible = true;
+                    NextQuestion2.Visible = true;
                 }
                 else
                 {
@@ -430,6 +438,8 @@ namespace MemoryGames
                     Bcaption.Enabled = false;
                     Ccaption.Enabled = false;
                     Dcaption.Enabled = false;
+                    NextQuestion1.Visible = true;
+                    NextQuestion2.Visible = true;
                 }
                 else
                 {
@@ -492,6 +502,8 @@ namespace MemoryGames
                     Bcaption.Enabled = false;
                     Ccaption.Enabled = false;
                     Dcaption.Enabled = false;
+                    NextQuestion1.Visible = true;
+                    NextQuestion2.Visible = true;
                 }
                 else
                 {
@@ -542,6 +554,8 @@ namespace MemoryGames
             tibi.Enabled = true;
             pictureBox8.Visible = false;
             richTextBox1.Visible = false;
+            Cont.Visible = false;
+            ImOut.Visible = false;
         }
 
         private void ImOut_Click(object sender, EventArgs e)

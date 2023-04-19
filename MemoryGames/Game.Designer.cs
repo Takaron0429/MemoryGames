@@ -109,6 +109,8 @@
             this.label1 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.NextQuestion2 = new System.Windows.Forms.Label();
+            this.NextQuestion1 = new System.Windows.Forms.Label();
             this.panel3.SuspendLayout();
             this.panel4.SuspendLayout();
             this.panel5.SuspendLayout();
@@ -1046,6 +1048,30 @@
             this.panel1.Size = new System.Drawing.Size(213, 18);
             this.panel1.TabIndex = 22;
             // 
+            // NextQuestion2
+            // 
+            this.NextQuestion2.AutoSize = true;
+            this.NextQuestion2.Font = new System.Drawing.Font("Showcard Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.NextQuestion2.ForeColor = System.Drawing.SystemColors.Control;
+            this.NextQuestion2.Location = new System.Drawing.Point(9, 206);
+            this.NextQuestion2.Name = "NextQuestion2";
+            this.NextQuestion2.Size = new System.Drawing.Size(291, 18);
+            this.NextQuestion2.TabIndex = 86;
+            this.NextQuestion2.Text = "A következő kérdéshez kattins ide";
+            this.NextQuestion2.Visible = false;
+            // 
+            // NextQuestion1
+            // 
+            this.NextQuestion1.AutoSize = true;
+            this.NextQuestion1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.NextQuestion1.ForeColor = System.Drawing.SystemColors.Control;
+            this.NextQuestion1.Location = new System.Drawing.Point(148, 170);
+            this.NextQuestion1.Name = "NextQuestion1";
+            this.NextQuestion1.Size = new System.Drawing.Size(39, 24);
+            this.NextQuestion1.TabIndex = 87;
+            this.NextQuestion1.Text = "<---";
+            this.NextQuestion1.Visible = false;
+            // 
             // Game
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1053,6 +1079,8 @@
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(43)))), ((int)(((byte)(83)))));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1125, 634);
+            this.Controls.Add(this.NextQuestion1);
+            this.Controls.Add(this.NextQuestion2);
             this.Controls.Add(this.progressBar1);
             this.Controls.Add(this.progressBar4);
             this.Controls.Add(this.progressBar3);
@@ -1238,5 +1266,7 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Label NextQuestion2;
+        private System.Windows.Forms.Label NextQuestion1;
     }
 }
