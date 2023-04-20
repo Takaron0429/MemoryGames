@@ -59,6 +59,8 @@ namespace MemoryGames
             Start.Visible = false;
             QuestionBox.Enabled = true;
             tibi.Enabled = true;
+            NextQuestion1.Visible = true;
+            NextQuestion2.Visible = true;
         }
 
         private void timer1_Tick(object sender, EventArgs e)
@@ -74,7 +76,7 @@ namespace MemoryGames
             {
                 timer1.Stop();
             }
-            if (mp == 0)
+            if (mp == 0 && Round < 5)
             {
                 StreamWriter file = new StreamWriter("../../Resources/money.txt");
                 file.WriteLine("Ajándék 1");
@@ -84,7 +86,26 @@ namespace MemoryGames
                 f6.ShowDialog();
                 this.Close();
             }
+            else if (mp == 0 && Round > 10)
+            {
+                StreamWriter file = new StreamWriter("../../Resources/money.txt");
+                file.WriteLine("Ajándék 3");
+                file.Close();
 
+                this.Hide();
+                f6.ShowDialog();
+                this.Close();
+            }
+            else if (mp == 0 && Round > 5)
+            {
+                StreamWriter file = new StreamWriter("../../Resources/money.txt");
+                file.WriteLine("Ajándék 2");
+                file.Close();
+
+                this.Hide();
+                f6.ShowDialog();
+                this.Close();
+            }
         }
 
         private void Rounds()
@@ -556,6 +577,8 @@ namespace MemoryGames
             richTextBox1.Visible = false;
             Cont.Visible = false;
             ImOut.Visible = false;
+            NextQuestion1.Visible = true;
+            NextQuestion2.Visible = true;
         }
 
         private void ImOut_Click(object sender, EventArgs e)

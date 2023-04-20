@@ -74,7 +74,7 @@ namespace MemoryGames
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(60, 13);
             this.label3.TabIndex = 4;
-            this.label3.Text = "Version 1.6";
+            this.label3.Text = "Version 1.7";
             // 
             // scoreboardListBox
             // 
@@ -120,6 +120,7 @@ namespace MemoryGames
             this.helpButton.TabIndex = 8;
             this.helpButton.Text = "SÚGÓ";
             this.helpButton.UseVisualStyleBackColor = true;
+            this.helpButton.Visible = false;
             this.helpButton.Click += new System.EventHandler(this.helpButton_Click);
             // 
             // pictureBox1

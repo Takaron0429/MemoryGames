@@ -5,8 +5,10 @@ using System.IO;
 using System.Media;
 using System.Windows.Forms;
 
-namespace MemoryGames {
-    public partial class End : Form {
+namespace MemoryGames
+{
+    public partial class End : Form
+    {
 
         SoundPlayer soundplayer = new SoundPlayer();
         static List<string> lines = new List<string>();
@@ -31,25 +33,30 @@ namespace MemoryGames {
             name.Close();
         }
 
-        public End() {
+        public End()
+        {
             InitializeComponent();
         }
 
-        private void OK() {
+        private void OK()
+        {
 
-            foreach (var str in lines) {
+            foreach (var str in lines)
+            {
                 name.Text = str;
-                if (name.Text.Length<=6)
+                if (name.Text.Length <= 6)
                 {
                     name.Location = new Point(240, 21);
                 }
 
             }
-            foreach (var str in lines2) {
+            foreach (var str in lines2)
+            {
                 Money.Text = str;
 
             }
-            if (Money.Text == "Ajándék 1") {
+            if (Money.Text == "Ajándék 1")
+            {
                 Money.ForeColor = Color.Green;
                 Money.Location = new Point(243, 6);
                 label1.Text = "Nyertél!";
@@ -60,11 +67,12 @@ namespace MemoryGames {
                 soundplayer.Play();
 
             }
-            else if (Money.Text == "Ajándék 2" || Money.Text == "Ajándék 3" || Money.Text == "Mindent visz!") {
+            else if (Money.Text == "Ajándék 2" || Money.Text == "Ajándék 3" || Money.Text == "Mindent visz!")
+            {
                 Money.ForeColor = Color.Green;
                 label1.Text = "Nyertél";
                 label1.ForeColor = Color.Orange;
-               
+
                 label1.Location = new Point(310, 164);
 
                 soundplayer = new SoundPlayer(@"../../Resources/Kvizjatek_Audience-Clapping-Sound-Effect.wav");
@@ -79,15 +87,18 @@ namespace MemoryGames {
             OK();
         }
 
-        private void button1_Click(object sender, EventArgs e) {
+        private void button1_Click(object sender, EventArgs e)
+        {
             this.Close();
         }
 
-        private void name_Click(object sender, EventArgs e) {
+        private void name_Click(object sender, EventArgs e)
+        {
 
         }
 
-        private void label1_Click(object sender, EventArgs e) {
+        private void label1_Click(object sender, EventArgs e)
+        {
 
         }
 
